@@ -1,0 +1,7 @@
+rose~rose1~40~5~2~red~3
+tulip~tulip1~35~2~1~pink~oval
+camomile~beautiful camomile~3~7~0,04~white~8
+rose~test~50~10~10,1~black~4
+camomile~Cam~7~9~0,1~pink~10
+tulip~TestTulip~48~3~3~orange~circle
+camomile~diana~5~10~50~white~20
