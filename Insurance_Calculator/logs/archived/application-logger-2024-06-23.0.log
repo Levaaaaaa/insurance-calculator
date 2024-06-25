@@ -1,0 +1,33 @@
+2024-06-23 19:45:18,323 [main] INFO  l.j.t.insurance.InsuranceApplication - Starting InsuranceApplication using Java 18.0.2 on DESKTOP-QKNTNJC with PID 11532 (D:\Leva\Program\repos\My_Portfolio\Insurance_Calculator\student_snezhko_leu_version_2\build\classes\java\main started by User in D:\Leva\Program\repos\My_Portfolio\Insurance_Calculator)
+2024-06-23 19:45:18,330 [main] INFO  l.j.t.insurance.InsuranceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-23 19:45:23,287 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-23 19:45:23,731 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 310 ms. Found 14 JPA repository interfaces.
+2024-06-23 19:45:26,373 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-06-23 19:45:26,408 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-23 19:45:26,411 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-23 19:45:26,411 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-06-23 19:45:26,877 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-23 19:45:26,878 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8083 ms
+2024-06-23 19:45:27,054 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-23 19:45:29,344 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-23 19:45:29,432 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/java-real-practice-insurance?serverTimezone=Europe/Minsk'
+2024-06-23 19:45:31,622 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2024-06-23 19:45:33,850 [main] INFO  liquibase.changelog - Reading from `java-real-practice-insurance`.DATABASECHANGELOG
+2024-06-23 19:45:34,210 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2024-06-23 19:45:34,591 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-23 19:45:34,752 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2024-06-23 19:45:35,274 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-06-23 19:45:35,594 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-23 19:45:37,832 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-23 19:45:37,886 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23 19:45:41,278 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-23 19:45:47,056 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-06-23 19:45:47,254 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-23 19:45:47,327 [main] INFO  l.j.t.insurance.InsuranceApplication - Started InsuranceApplication in 31.119 seconds (JVM running for 33.888)
+2024-06-23 19:46:32,893 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23 19:46:32,894 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-23 19:46:32,898 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-06-23 19:47:17,596 [http-nio-8080-exec-3] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 1003
+2024-06-23 19:47:47,080 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-23 19:47:47,085 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-23 19:47:47,118 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

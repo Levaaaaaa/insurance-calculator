@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Insurance_Calculator.iml" filepath="$PROJECT_DIR$/.idea/modules/Insurance_Calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2020189124/Insurance_Calculator.student_snezhko_leu.iml" filepath="$PROJECT_DIR$/.idea/modules/-2020189124/Insurance_Calculator.student_snezhko_leu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2020189124/Insurance_Calculator.student_snezhko_leu.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-2020189124/Insurance_Calculator.student_snezhko_leu.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2020189124/Insurance_Calculator.student_snezhko_leu.test.iml" filepath="$PROJECT_DIR$/.idea/modules/-2020189124/Insurance_Calculator.student_snezhko_leu.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/student_snezhko_leu_version_2/Insurance_Calculator.student_snezhko_leu_version_2.iml" filepath="$PROJECT_DIR$/.idea/modules/student_snezhko_leu_version_2/Insurance_Calculator.student_snezhko_leu_version_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/student_snezhko_leu_version_2/Insurance_Calculator.student_snezhko_leu_version_2.main.iml" filepath="$PROJECT_DIR$/.idea/modules/student_snezhko_leu_version_2/Insurance_Calculator.student_snezhko_leu_version_2.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/student_snezhko_leu_version_2/Insurance_Calculator.student_snezhko_leu_version_2.test.iml" filepath="$PROJECT_DIR$/.idea/modules/student_snezhko_leu_version_2/Insurance_Calculator.student_snezhko_leu_version_2.test.iml" />

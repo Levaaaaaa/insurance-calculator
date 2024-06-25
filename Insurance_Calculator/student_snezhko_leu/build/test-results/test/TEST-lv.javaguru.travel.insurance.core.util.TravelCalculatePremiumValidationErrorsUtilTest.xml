@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lv.javaguru.travel.insurance.core.util.TravelCalculatePremiumValidationErrorsUtilTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-05-24T20:55:43" hostname="DESKTOP-QKNTNJC" time="0.057">
+  <properties/>
+  <testcase name="ValidationErrorsUtilIsNotNull()" classname="lv.javaguru.travel.insurance.core.util.TravelCalculatePremiumValidationErrorsUtilTest" time="0.002"/>
+  <testcase name="ValidationErrorsUtilGetCorrectDescriptionByErrorCodeTest()" classname="lv.javaguru.travel.insurance.core.util.TravelCalculatePremiumValidationErrorsUtilTest" time="0.001"/>
+  <testcase name="ErrorsUtilGetDescriptionWithTwoPlaceholdersTest()" classname="lv.javaguru.travel.insurance.core.util.TravelCalculatePremiumValidationErrorsUtilTest" time="0.05"/>
+  <testcase name="ErrorsUtilGetCorrectDescriptionWithPlaceholderTest()" classname="lv.javaguru.travel.insurance.core.util.TravelCalculatePremiumValidationErrorsUtilTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -11,6 +11,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/student_snezhko_leu" />
             <option value="$PROJECT_DIR$/student_snezhko_leu_version_2" />
           </set>
         </option>
@@ -21,6 +22,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/student_snezhko_leu" />
             <option value="$PROJECT_DIR$/student_snezhko_leu_version_2" />
           </set>
         </option>
