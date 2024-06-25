@@ -1,0 +1,12 @@
+{
+  "personFirstName" : null,
+
+  "personLastName" : null,
+  "personIc" : null,
+  "personBirthDate" : null,
+  "agreementDateFrom" : null,
+  "agreementDateTo" : null,
+  "country" : null,
+  "medicalRiskLimitLevel" : null,
+  "selected_risks" : ["TRAVEL_MEDICAL"]
+}

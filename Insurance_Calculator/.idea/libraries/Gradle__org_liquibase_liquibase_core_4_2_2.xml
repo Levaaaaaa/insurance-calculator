@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.liquibase:liquibase-core:4.2.2" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/caches/modules-2/files-2.1/org.liquibase/liquibase-core/4.2.2/294e476e4dfae867371efcc35cd27dafd0757d59/liquibase-core-4.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/caches/modules-2/files-2.1/org.liquibase/liquibase-core/4.2.2/be2d028dc8a028805f74d167aee368db49fe6ef5/liquibase-core-4.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

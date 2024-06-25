@@ -1,0 +1,39 @@
+{
+    "agreementDateFrom": "2025-05-25",
+    "agreementDateTo": "2025-05-29",
+    "uuid" : null,
+    "cost" : 6.00,
+    "country": "SPAIN",
+    "agreementPremium": 26.00,
+    "selected_risks":["TRAVEL_MEDICAL"],
+    "persons": [
+      {
+        "personFirstName": "Vasja",
+        "personLastName": "Pupkin",
+        "personIc" : null,
+        "personBirthDate": "2000-05-29",
+        "medicalRiskLimitLevel" : "LEVEL_10000",
+        "personPremium": 11.00,
+        "selected_risks": [
+          {
+            "riskIc": "TRAVEL_MEDICAL",
+            "premium": 11.00
+          }
+        ]
+      },
+      {
+        "personFirstName": "Petja",
+        "personLastName": "Pupkin",
+        "personIc" : null,
+        "personBirthDate": "1950-03-01",
+        "medicalRiskLimitLevel" : "LEVEL_10000",
+        "personPremium": 15.00,
+        "selected_risks": [
+          {
+            "riskIc": "TRAVEL_MEDICAL",
+            "premium": 15.00
+          }
+        ]
+      }
+    ]
+}

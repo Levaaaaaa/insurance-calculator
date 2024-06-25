@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lv.javaguru.travel.insurance.core.validations.calculate.agreement.AgreementDateFromInFutureValidationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-06-23T16:36:51" hostname="DESKTOP-QKNTNJC" time="0.025">
+  <properties/>
+  <testcase name="AgreementDateFromIsCorrectTest()" classname="lv.javaguru.travel.insurance.core.validations.calculate.agreement.AgreementDateFromInFutureValidationTest" time="0.003"/>
+  <testcase name="AgreementDateFromIsInPastTest()" classname="lv.javaguru.travel.insurance.core.validations.calculate.agreement.AgreementDateFromInFutureValidationTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

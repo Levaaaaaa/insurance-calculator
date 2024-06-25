@@ -1,0 +1,13 @@
+{
+  "personFirstName": "Vasja",
+  "cost" : 1.00,
+
+  "personLastName" : "Pupkin",
+  "personIc" : "PERSON_0",
+  "personBirthDate" : "2000-05-29",
+  "agreementDateFrom" : "2025-05-20",
+  "agreementDateTo" : "2025-05-29",
+  "country" : "SPAIN",
+  "medicalRiskLimitLevel" : "LEVEL_10000",
+  "selected_risks": null
+}
