@@ -39,6 +39,15 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -62,7 +71,16 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.main_v1">
+  <component name="RunManager" selected="Application.Main_v2">
+    <configuration name="Main_v2" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="lv.javaguru.travel.insurance.InsuranceApplication" />
+      <module name="Insurance_Calculator.student_snezhko_leu_version_2.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main_v1" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="lv.javaguru.travel.insurance.InsuranceApplication" />
       <module name="Insurance_Calculator.student_snezhko_leu.main" />
@@ -70,20 +88,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main_v2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lv.javaguru.travel.insurance.InsuranceApplication" />
-      <module name="Insurance_Calculator.student_snezhko_leu_version_2.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lv.javaguru.travel.insurance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests in 'student_snezhko_leu_version_2.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AllFieldFilledTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/student_snezhko_leu_version_2" />
@@ -94,7 +99,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
+            <option value=":student_snezhko_leu_version_2:test" />
+            <option value="--tests" />
+            <option value="&quot;lv.javaguru.travel.insurance.rest.controller_v1_test.correct_request.AllFieldFilledTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -105,87 +112,116 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="student_snezhko_leu_version_2 [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AllFieldFilledTest.execute1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/student_snezhko_leu_version_2" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="buildDependents" />
+            <option value=":student_snezhko_leu_version_2:test" />
+            <option value="--tests" />
+            <option value="&quot;lv.javaguru.travel.insurance.rest.controller_v1_test.correct_request.AllFieldFilledTest.execute1&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="student_snezhko_leu_version_2 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DateToIsLessThanDateFromTest.execute12" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/student_snezhko_leu_version_2" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value=":student_snezhko_leu_version_2:test" />
+            <option value="--tests" />
+            <option value="&quot;lv.javaguru.travel.insurance.rest.controller_v2_test.agreement_errors.DateToIsLessThanDateFromTest.execute12&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="student_snezhko_leu_version_2 [prepareKotlinBuildScriptModel]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'Insurance_Calculator.student_snezhko_leu_version_2.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/student_snezhko_leu_version_2" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="prepareKotlinBuildScriptModel" />
+            <option value=":student_snezhko_leu_version_2:test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TravelRiskPremiumCalculatorEvacuationTest.calculatePremiumIntegrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/student_snezhko_leu_version_2" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":student_snezhko_leu_version_2:test" />
+            <option value="--tests" />
+            <option value="&quot;lv.javaguru.travel.insurance.core.underwriting.calculators.TravelRiskPremiumCalculatorEvacuationTest.calculatePremiumIntegrationTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.Main_v2" />
       <item itemvalue="Application.main_v1" />
-      <item itemvalue="Application.main_v2" />
-      <item itemvalue="Gradle.student_snezhko_leu_version_2 [build]" />
-      <item itemvalue="Gradle.student_snezhko_leu_version_2 [buildDependents]" />
-      <item itemvalue="Gradle.student_snezhko_leu_version_2 [prepareKotlinBuildScriptModel]" />
-      <item itemvalue="Gradle.Tests in 'student_snezhko_leu_version_2.test'" />
+      <item itemvalue="Gradle.AllFieldFilledTest" />
+      <item itemvalue="Gradle.AllFieldFilledTest.execute1" />
+      <item itemvalue="Gradle.DateToIsLessThanDateFromTest.execute12" />
+      <item itemvalue="Gradle.TravelRiskPremiumCalculatorEvacuationTest.calculatePremiumIntegrationTest" />
+      <item itemvalue="Gradle.Tests in 'Insurance_Calculator.student_snezhko_leu_version_2.test'" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.main_v2" />
-        <item itemvalue="Gradle.Tests in 'student_snezhko_leu_version_2.test'" />
-        <item itemvalue="Gradle.student_snezhko_leu_version_2 [buildDependents]" />
-        <item itemvalue="Gradle.student_snezhko_leu_version_2 [prepareKotlinBuildScriptModel]" />
-        <item itemvalue="Gradle.student_snezhko_leu_version_2 [build]" />
+        <item itemvalue="Gradle.Tests in 'Insurance_Calculator.student_snezhko_leu_version_2.test'" />
+        <item itemvalue="Gradle.DateToIsLessThanDateFromTest.execute12" />
+        <item itemvalue="Gradle.TravelRiskPremiumCalculatorEvacuationTest.calculatePremiumIntegrationTest" />
+        <item itemvalue="Gradle.AllFieldFilledTest.execute1" />
+        <item itemvalue="Gradle.AllFieldFilledTest" />
       </list>
     </recent_temporary>
   </component>
@@ -210,6 +246,52 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/student_snezhko_leu_version_2/src/main/java/lv/javaguru/travel/insurance/rest/TravelGetAgreementByUUIDController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/student_snezhko_leu_version_2/src/main/java/lv/javaguru/travel/insurance/core/services/get/BuildAgreementService.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/student_snezhko_leu_version_2/src/main/java/lv/javaguru/travel/insurance/core/services/calculate/TravelCalculatePremiumServiceImpl.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/student_snezhko_leu_version_2/src/main/java/lv/javaguru/travel/insurance/core/validations/calculate/TravelAgreementValidatorImpl.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/student_snezhko_leu_version_2/src/main/java/lv/javaguru/travel/insurance/core/underwriting/calculators/TravelRiskPremiumCalculatorEvacuation.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/student_snezhko_leu_version_2/src/main/java/lv/javaguru/travel/insurance/core/api/dto/v2/ConverterV2DTO.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/student_snezhko_leu_version_2/src/main/java/lv/javaguru/travel/insurance/rest/v2/TravelInsuranceRestControllerV2.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/student_snezhko_leu_version_2/src/main/java/lv/javaguru/travel/insurance/core/api/dto/v2/ConverterV2DTO.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

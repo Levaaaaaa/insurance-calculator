@@ -1,0 +1,68 @@
+2024-06-25 11:59:30,483 [main] INFO  l.j.t.insurance.InsuranceApplication Starting InsuranceApplication using Java 18.0.2 on DESKTOP-QKNTNJC with PID 8140 (D:\Leva\Program\repos\My_Portfolio\Insurance_Calculator\student_snezhko_leu\out\production\classes started by User in D:\Leva\Program\repos\My_Portfolio\Insurance_Calculator)
+2024-06-25 11:59:30,595 [main] INFO  l.j.t.insurance.InsuranceApplication No active profile set, falling back to 1 default profile: "default"
+2024-06-25 11:59:34,658 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-25 11:59:34,990 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 288 ms. Found 5 JPA repository interfaces.
+2024-06-25 11:59:37,622 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2024-06-25 11:59:37,657 [main] INFO  o.a.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-25 11:59:37,658 [main] INFO  o.a.catalina.core.StandardService Starting service [Tomcat]
+2024-06-25 11:59:37,659 [main] INFO  o.a.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-06-25 11:59:38,200 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2024-06-25 11:59:38,202 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 7057 ms
+2024-06-25 11:59:38,309 [main] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+2024-06-25 11:59:38,968 [main] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+2024-06-25 11:59:39,011 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testbd'
+2024-06-25 11:59:40,686 [main] INFO  liquibase.lockservice Successfully acquired change log lock
+2024-06-25 11:59:43,117 [main] INFO  liquibase.changelog Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2024-06-25 11:59:43,129 [main] INFO  liquibase.changelog Reading from PUBLIC.DATABASECHANGELOG
+2024-06-25 11:59:43,727 [main] INFO  liquibase.changelog Table classifiers created
+2024-06-25 11:59:43,728 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-1.xml::1::Levaaaaaa ran successfully in 18ms
+2024-06-25 11:59:43,758 [main] INFO  liquibase.changelog Index ix_classifiers_title created
+2024-06-25 11:59:43,761 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-1.xml::2::Levaaaaaa ran successfully in 11ms
+2024-06-25 11:59:43,777 [main] INFO  liquibase.changelog Table classifier_values created
+2024-06-25 11:59:43,777 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-2.xml::3::Levaaaaaa ran successfully in 9ms
+2024-06-25 11:59:43,798 [main] INFO  liquibase.changelog Foreign key constraint added to classifier_values (classifier_id)
+2024-06-25 11:59:43,799 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-2.xml::4::Levaaaaaa ran successfully in 16ms
+2024-06-25 11:59:43,808 [main] INFO  liquibase.changelog Index ix_classifier_values_ic created
+2024-06-25 11:59:43,809 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-2.xml::5::Levaaaaaa ran successfully in 6ms
+2024-06-25 11:59:43,851 [main] INFO  liquibase.changelog Table country_default_day_rate created
+2024-06-25 11:59:43,854 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-3.xml::6::Levaaaaaa ran successfully in 9ms
+2024-06-25 11:59:43,860 [main] INFO  liquibase.changelog Index ix_country_default_day_rate_country_ic created
+2024-06-25 11:59:43,861 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-3.xml::7::Levaaaaaa ran successfully in 3ms
+2024-06-25 11:59:43,874 [main] INFO  liquibase.changelog Table age_coefficient created
+2024-06-25 11:59:43,876 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-4.xml::8::Levaaaaaa ran successfully in 7ms
+2024-06-25 11:59:44,168 [main] INFO  liquibase.changelog Table medical_risk_limit_level created
+2024-06-25 11:59:44,169 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-5.xml::9::Levaaaaaa ran successfully in 26ms
+2024-06-25 11:59:44,189 [main] INFO  liquibase.changelog Index ix_medical_risk_limit_level_limit_level_ic created
+2024-06-25 11:59:44,192 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-5.xml::10::Levaaaaaa ran successfully in 7ms
+2024-06-25 11:59:44,218 [main] INFO  liquibase.changelog Custom SQL executed
+2024-06-25 11:59:44,219 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-6.xml::11::Levaaaaaa ran successfully in 22ms
+2024-06-25 11:59:44,301 [main] INFO  liquibase.changelog Custom SQL executed
+2024-06-25 11:59:44,302 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-6.xml::12::Levaaaaaa ran successfully in 78ms
+2024-06-25 11:59:44,312 [main] INFO  liquibase.changelog Custom SQL executed
+2024-06-25 11:59:44,315 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-6.xml::13::Levaaaaaa ran successfully in 8ms
+2024-06-25 11:59:44,402 [main] INFO  liquibase.changelog Custom SQL executed
+2024-06-25 11:59:44,415 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-6.xml::14::Levaaaaaa ran successfully in 68ms
+2024-06-25 11:59:44,469 [main] INFO  liquibase.changelog Custom SQL executed
+2024-06-25 11:59:44,474 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-6.xml::15::Levaaaaaa ran successfully in 34ms
+2024-06-25 11:59:44,493 [main] INFO  liquibase.changelog Custom SQL executed
+2024-06-25 11:59:44,495 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-6.xml::16::Levaaaaaa ran successfully in 14ms
+2024-06-25 11:59:44,506 [main] INFO  liquibase.changelog Custom SQL executed
+2024-06-25 11:59:44,507 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-6.xml::17::Levaaaaaa ran successfully in 4ms
+2024-06-25 11:59:44,546 [main] INFO  liquibase.changelog Custom SQL executed
+2024-06-25 11:59:44,550 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-6.xml::18::Levaaaaaa ran successfully in 21ms
+2024-06-25 11:59:44,566 [main] INFO  liquibase.changelog Custom SQL executed
+2024-06-25 11:59:44,568 [main] INFO  liquibase.changelog ChangeSet db/changelog/changes/changelog-6.xml::19::Levaaaaaa ran successfully in 15ms
+2024-06-25 11:59:44,578 [main] INFO  liquibase.lockservice Successfully released change log lock
+2024-06-25 11:59:45,535 [main] INFO  o.h.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-25 11:59:45,800 [main] INFO  org.hibernate.Version HHH000412: Hibernate ORM core version 5.6.12.Final
+2024-06-25 11:59:46,508 [main] INFO  o.h.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-06-25 11:59:46,827 [main] INFO  org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-06-25 11:59:48,690 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-25 11:59:48,709 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-25 11:59:50,773 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-25 11:59:52,100 [main] INFO  o.a.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2024-06-25 11:59:52,214 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-25 11:59:52,249 [main] INFO  l.j.t.insurance.InsuranceApplication Started InsuranceApplication in 23.553 seconds (JVM running for 30.736)
+2024-06-25 12:01:11,707 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-25 12:01:11,713 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+2024-06-25 12:01:11,718 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.

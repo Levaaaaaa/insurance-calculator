@@ -94,6 +94,7 @@ CREATE TABLE IF NOT EXISTS agreement_persons(
     agreement BIGINT NOT NULL,
     person BIGINT NOT NULL,
     medical_risk_limit_level VARCHAR(200),
+    person_medical_status VARCHAR(200),
     premium DECIMAL(10,2) NOT NULL,
     PRIMARY KEY(id)
 );
@@ -156,3 +157,20 @@ ON travel_cancellation_country_safety_rating_coefficient(country);
 
 ALTER TABLE travel_cancellation_country_safety_rating_coefficient
 ADD CONSTRAINT IF NOT EXISTS tc_correct_safety_rating CHECK(rating > 0 and rating <= 10);
+
+CREATE TABLE IF NOT EXISTS travel_evacuation_age_coefficient
+(id BIGINT NOT NULL AUTO_INCREMENT,
+age_from INT NOT NULL,
+age_to INT NOT NULL,
+coefficient DECIMAL(10,2) NOT NULL,
+PRIMARY KEY(id));
+
+CREATE UNIQUE INDEX IF NOT EXISTS ix_travel_evacuation_age_from_and_to
+ON travel_evacuation_age_coefficient(age_from, age_to);
+
+CREATE TABLE IF NOT EXISTS travel_evacuation_medical_coefficient(
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    ic VARCHAR(50) NOT NULL UNIQUE,
+    coefficient DECIMAL(10,2) NOT NULL,
+    PRIMARY KEY(id)
+)

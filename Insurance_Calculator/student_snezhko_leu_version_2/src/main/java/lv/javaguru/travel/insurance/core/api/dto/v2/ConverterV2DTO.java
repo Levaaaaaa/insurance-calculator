@@ -1,5 +1,6 @@
 package lv.javaguru.travel.insurance.core.api.dto.v2;
 
+import lv.javaguru.travel.insurance.core.TE_PERSON_MEDICAL_STATUS;
 import lv.javaguru.travel.insurance.core.api.command.calculate.TravelCalculatePremiumCoreCommand;
 import lv.javaguru.travel.insurance.core.api.command.calculate.TravelCalculatePremiumCoreResult;
 import lv.javaguru.travel.insurance.core.api.dto.AgreementDTO;
@@ -21,7 +22,7 @@ public class ConverterV2DTO {
     @Autowired
     private GenerateAgreementUUID generateAgreementUUID;
 
-    public TravelCalculatePremiumCoreCommand buildCommand(TravelCalculatePremiumRequestV2 request) {
+    public TravelCalculatePremiumCoreCommand buildCommand(TravelCalculatePremiumRequestV2 request) throws IllegalArgumentException{
         return new TravelCalculatePremiumCoreCommand(buildAgreement(prepareRequest(request)));
     }
 
@@ -55,7 +56,9 @@ public class ConverterV2DTO {
         response.setMedicalRiskLimitLevel(personDTO.getMedicalRiskLimitLevel());
         response.setSelectedRisks(personDTO.getSelectedRisks());
         response.setPersonPremium(personDTO.getPersonPremium());
-
+        if (personDTO.getPersonMedicalStatus() != null) {
+            response.setPersonMedicalStatus(personDTO.getPersonMedicalStatus().name());
+        }
         return response;
     }
     private TravelCalculatePremiumResponseV2 buildResponseWithErrors(TravelCalculatePremiumCoreResult result) {
@@ -64,7 +67,7 @@ public class ConverterV2DTO {
         return response;
     }
 
-    private AgreementDTO buildAgreement(TravelCalculatePremiumRequestV2 request) {
+    private AgreementDTO buildAgreement(TravelCalculatePremiumRequestV2 request) throws IllegalArgumentException{
         AgreementDTO agreement = new AgreementDTO();
         agreement.setAgreementDateTo(request.getAgreementDateTo());
         agreement.setAgreementDateFrom(request.getAgreementDateFrom());
@@ -114,7 +117,16 @@ public class ConverterV2DTO {
         person.setPersonLastName(requestPerson.getPersonLastName());
         person.setMedicalRiskLimitLevel(requestPerson.getMedicalRiskLimitLevel());
         person.setPersonBirthDate(requestPerson.getPersonBirthDate());
-
+        if (requestPerson.getPersonMedicalStatus() == null) {
+            person.setPersonMedicalStatus(null);
+        }
+        else {
+            try {
+                person.setPersonMedicalStatus(TE_PERSON_MEDICAL_STATUS.valueOf(requestPerson.getPersonMedicalStatus()));
+            } catch (IllegalArgumentException e) {
+                throw new IllegalArgumentException("Unsupported value of field personMedicalStatus!");
+            }
+        }
         return person;
     }
 

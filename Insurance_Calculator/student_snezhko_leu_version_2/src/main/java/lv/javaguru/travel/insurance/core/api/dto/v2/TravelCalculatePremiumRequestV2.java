@@ -34,6 +34,5 @@ public class TravelCalculatePremiumRequestV2 {
     private String country;
 
     private List<PersonRequestV2DTO> persons;
-
     private BigDecimal cost;
 }

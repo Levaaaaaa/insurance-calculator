@@ -19,6 +19,7 @@
         "medicalRiskLimitLevel" : "CORRECT_MEDICAL_RISK_LIMIT_LEVEL",
         "personBirthDate" : "2005-02-02",
         "personPremium" : 10.00,
+        "medical_status" : "PERFECTLY_HEALTHY",
         "selected_risks": [
           {
             "riskIc" : "TRAVEL_CANCELLATION",

@@ -8,6 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lv.javaguru.travel.insurance.core.TE_PERSON_MEDICAL_STATUS;
 import lv.javaguru.travel.insurance.core.api.dto.util.BigDecimalSerializer;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -38,4 +39,7 @@ public class PersonDTO {
     @JsonProperty("selected_risks")
     private List<RiskDTO> selectedRisks;
 
+    @JsonAlias("medical_status")
+    @JsonProperty("medical_status")
+    private TE_PERSON_MEDICAL_STATUS personMedicalStatus;
 }

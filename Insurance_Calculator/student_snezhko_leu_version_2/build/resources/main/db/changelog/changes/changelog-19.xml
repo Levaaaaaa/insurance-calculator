@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.2.xsd">
+    <changeSet id="40" author="Leu">
+        <createTable tableName="travel_evacuation_age_coefficient">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints unique="true" nullable="false"/>
+            </column>
+            <column name="age_from" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="age_to" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="coefficient" type="DECIMAL(10,2)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="41" author="Leu">
+        <createIndex tableName="travel_evacuation_age_coefficient" indexName="ix_travel_evacuation_age_from_and_to" unique="true">
+            <column name="age_from"/>
+            <column name="age_to"/>
+        </createIndex>
+    </changeSet>
+
+    <changeSet id="42" author="Leu">
+        <sql>
+            INSERT INTO travel_evacuation_age_coefficient(age_from, age_to, coefficient)
+            VALUES
+            (0,9,5.00),
+            (10,17,10.00),
+            (18, 39, 20.00),
+            (40, 64, 30.00),
+            (65, 130, 50.00);
+        </sql>
+    </changeSet>
+</databaseChangeLog>

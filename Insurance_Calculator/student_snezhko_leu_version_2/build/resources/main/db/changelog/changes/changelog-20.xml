@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.2.xsd">
+    <changeSet id="43" author="Leu">
+        <createTable tableName="travel_evacuation_medical_coefficient">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints unique="true" nullable="false"/>
+            </column>
+            <column name="ic" type="VARCHAR(50)">
+                <constraints unique="true" nullable="false"/>
+            </column>
+            <column name="coefficient" type="DECIMAL(10,2)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="44" author="Leu">
+        <sql>
+            INSERT INTO travel_evacuation_medical_coefficient(ic, coefficient)
+            VALUES
+            ('PERFECTLY_HEALTHY', 1.00),
+            ('SLIGHTLY_ILL', 2.00),
+            ('ILL', 3.00),
+            ('HARDLY_ILL', 4.00);
+        </sql>
+    </changeSet>
+</databaseChangeLog>

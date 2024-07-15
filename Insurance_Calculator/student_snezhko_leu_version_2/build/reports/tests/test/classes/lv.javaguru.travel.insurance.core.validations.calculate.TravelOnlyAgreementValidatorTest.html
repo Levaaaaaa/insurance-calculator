@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.043s</div>
+<div class="counter">0.120s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">shouldNotReturnErrors()</td>
-<td class="success">0.009s</td>
+<td class="success">0.032s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldReturnListAgreementErrors()</td>
-<td class="success">0.009s</td>
+<td class="success">0.012s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldReturnSingleAgreementErrors()</td>
-<td class="success">0.025s</td>
+<td class="success">0.076s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -97,11 +97,11 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2024-06-23 19:36:50,919 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [lv.javaguru.travel.insurance.core.validations.calculate.TravelOnlyAgreementValidatorTest], using DelegatingSmartContextLoader
-2024-06-23 19:36:50,924 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [lv.javaguru.travel.insurance.core.validations.calculate.TravelOnlyAgreementValidatorTest]: no resource found for suffixes {-context.xml}.
-2024-06-23 19:36:50,924 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [lv.javaguru.travel.insurance.core.validations.calculate.TravelOnlyAgreementValidatorTest]: TravelOnlyAgreementValidatorTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-06-23 19:36:50,925 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2024-06-23 19:36:50,927 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6adc90e9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@26247027, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@aeb8ee2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@320ca97c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3c592c0c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3979c6e8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6fb3d3bb, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@38a3c078, org.springframework.test.context.event.EventPublishingTestExecutionListener@4d6fa22c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3a5663ef, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4b094115, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6d0fe80c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5d414943, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5481001f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5581e273]
+<pre>2024-07-15 18:30:39,996 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [lv.javaguru.travel.insurance.core.validations.calculate.TravelOnlyAgreementValidatorTest], using DelegatingSmartContextLoader
+2024-07-15 18:30:39,998 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [lv.javaguru.travel.insurance.core.validations.calculate.TravelOnlyAgreementValidatorTest]: no resource found for suffixes {-context.xml}.
+2024-07-15 18:30:39,998 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [lv.javaguru.travel.insurance.core.validations.calculate.TravelOnlyAgreementValidatorTest]: TravelOnlyAgreementValidatorTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-07-15 18:30:40,000 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-07-15 18:30:40,001 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@19740583, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@8850865, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3e11996e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7dcc6679, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@44ad3c5e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@64cbc28e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5623fd90, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4842a683, org.springframework.test.context.event.EventPublishingTestExecutionListener@65a03c19, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5f455d91, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@16c3e494, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4b682e71, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2f4c83f1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5a90ea5c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@537e52de]
 </pre>
 </span>
 </div>
@@ -113,7 +113,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.2</a> at 23 июн. 2024 г., 19:37:17</p>
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 15 июл. 2024 г., 18:31:06</p>
 </div>
 </div>
 </body>

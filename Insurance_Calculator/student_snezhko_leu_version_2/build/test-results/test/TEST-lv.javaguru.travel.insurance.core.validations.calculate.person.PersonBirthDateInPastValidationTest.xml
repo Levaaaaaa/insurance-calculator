@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="lv.javaguru.travel.insurance.core.validations.calculate.person.PersonBirthDateInPastValidationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-06-23T16:37:05" hostname="DESKTOP-QKNTNJC" time="0.008">
+<testsuite name="lv.javaguru.travel.insurance.core.validations.calculate.person.PersonBirthDateInPastValidationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-07-15T15:30:52" hostname="DESKTOP-QKNTNJC" time="0.016">
   <properties/>
-  <testcase name="personBirthDateInFuture()" classname="lv.javaguru.travel.insurance.core.validations.calculate.person.PersonBirthDateInPastValidationTest" time="0.004"/>
-  <testcase name="personCorrectBirthDateTest()" classname="lv.javaguru.travel.insurance.core.validations.calculate.person.PersonBirthDateInPastValidationTest" time="0.003"/>
+  <testcase name="personBirthDateInFuture()" classname="lv.javaguru.travel.insurance.core.validations.calculate.person.PersonBirthDateInPastValidationTest" time="0.013"/>
+  <testcase name="personCorrectBirthDateTest()" classname="lv.javaguru.travel.insurance.core.validations.calculate.person.PersonBirthDateInPastValidationTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

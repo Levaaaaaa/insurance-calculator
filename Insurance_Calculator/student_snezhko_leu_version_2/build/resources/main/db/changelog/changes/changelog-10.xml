@@ -23,6 +23,9 @@
                     <constraints nullable="false"/>
                 </column>
 
+
+                <column name="person_medical_status" type="VARCHAR(200)"/>
+
                 <column name="premium" type="DECIMAL(10,2)">
                     <constraints nullable="false"/>
                 </column>

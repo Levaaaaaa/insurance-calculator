@@ -36,7 +36,9 @@ public class AgreementPersonEntityService {
         newDomain.setMedicalRiskLimitLevel(person.getMedicalRiskLimitLevel());
         newDomain.setPremium(person.getPersonPremium());
         newDomain.setAgreement(agreementDomain);
-
+        if (person.getPersonMedicalStatus() != null) {
+            newDomain.setPersonMedicalStatus(person.getPersonMedicalStatus().name());
+        }
         agreementPersonEntityRepository.save(newDomain);
 
         return newDomain;

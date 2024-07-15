@@ -222,3 +222,18 @@ VALUES
 ('LATVIA',5),
 ('SPAIN',8),
 ('JAPAN', 9);
+
+INSERT INTO travel_evacuation_age_coefficient(age_from, age_to, coefficient)
+VALUES
+(0,9,5.00),
+(10,17,10.00),
+(18, 39, 20.00),
+(40, 64, 30.00),
+(65, 130, 50.00);
+
+INSERT INTO travel_evacuation_medical_coefficient(ic, coefficient)
+VALUES
+('PERFECTLY_HEALTHY', 1.00),
+('SLIGHTLY_ILL', 2.00),
+('ILL', 3.00),
+('HARDLY_ILL', 4.00);

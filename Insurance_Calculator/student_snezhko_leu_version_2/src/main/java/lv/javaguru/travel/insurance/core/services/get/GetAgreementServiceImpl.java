@@ -25,6 +25,7 @@ public class GetAgreementServiceImpl implements GetAgreementService{
     @Autowired
     private BuildAgreementService buildAgreementService;
 
+
     @Override
     public TravelGetAgreementCoreResult getAgreement(TravelGetAgreementCoreCommand command) {
         List<ValidationErrorDTO> errors = validator.validate(command.getUuid());
@@ -48,7 +49,12 @@ public class GetAgreementServiceImpl implements GetAgreementService{
             return result;
         }
         result.setStatus(GetResultStatus.SUCCESS);
-        result.setAgreementDTO(buildAgreementService.buildAgreement(optionalAgreementDomain.get()));
+        try {
+            result.setAgreementDTO(buildAgreementService.buildAgreement(optionalAgreementDomain.get()));
+        }
+        catch (IllegalArgumentException e) {
+
+        }
         return result;
     }
 

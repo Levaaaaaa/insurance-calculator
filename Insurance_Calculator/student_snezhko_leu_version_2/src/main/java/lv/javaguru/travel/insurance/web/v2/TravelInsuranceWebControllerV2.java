@@ -15,6 +15,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.List;
+
+import static lv.javaguru.travel.insurance.core.validations.calculate.person.PersonMedicalStatusErrorGenerator.generateErrorCode21;
+
 @Controller
 public class TravelInsuranceWebControllerV2 {
     @Autowired
@@ -43,8 +47,15 @@ public class TravelInsuranceWebControllerV2 {
     public String processForm(@ModelAttribute("request")TravelCalculatePremiumRequestV2 request,
                               ModelMap modelMap) {
         final Stopwatch stopwatch = Stopwatch.createStarted();
-        TravelCalculatePremiumCoreCommand command = converterV2DTO.buildCommand(request);
-        TravelCalculatePremiumCoreResult result = service.calculatePremium(command);
+        TravelCalculatePremiumCoreResult result;
+        try {
+            TravelCalculatePremiumCoreCommand command = converterV2DTO.buildCommand(request);
+            result = service.calculatePremium(command);
+        }
+        catch (IllegalArgumentException e) {
+            result = new TravelCalculatePremiumCoreResult(List.of(generateErrorCode21()), null);
+        }
+
         TravelCalculatePremiumResponseV2 response = converterV2DTO.buildResponse(result);
 
         stopwatch.stop();

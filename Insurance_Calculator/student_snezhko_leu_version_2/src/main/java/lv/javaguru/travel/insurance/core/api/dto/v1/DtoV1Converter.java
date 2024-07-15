@@ -59,6 +59,7 @@ public class DtoV1Converter {
         response.setMedicalRiskLimitLevel(person.getMedicalRiskLimitLevel());
         response.setPersonIc(person.getPersonIc());
         response.setUuid(agreement.getUuid());
+        response.setPersonMedicalStatus(person.getPersonMedicalStatus());
 
         return response;
     }

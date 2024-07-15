@@ -42,6 +42,12 @@
                         <input type="text" id="persons[${index}].medicalRiskLimitLevel" name="persons[${index}].medicalRiskLimitLevel"/>
                     </div>
                     <br>
+
+                    <div>
+                        <label for="persons[${index}].personMedicalStatus">Medical status : </label>
+                        <input type="text" id="persons[${index}].personMedicalStatus" name="persons[${index}].personMedicalStatus"/>
+                    </div>
+                    <br
                 </div>`;
                 personContainer.insertAdjacentHTML("beforeend", personTemplate);
         }
@@ -155,6 +161,14 @@
                     </div>
                     <br>
 
+                    <div>
+                        <label for="personMedicalStatus">Person medical status: </label>
+                        <input
+                                type="text"
+                                id="personMedicalStatus"
+                                th:field="*{persons[__${personStat.index}__].personMedicalStatus}"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
@@ -181,6 +195,7 @@
             <p th:text="'Person code: ' + ${person.personIc}"></p>
             <p th:text="'Medical Risk Limit Level: ' + ${person.medicalRiskLimitLevel}"></p>
             <p th:text="'Birth Date: ' + ${person.personBirthDate}"></p>
+            <p th:text="'Person medical status : ' + ${person.personMedicalStatus}"></p>
             <p th:text="'Premium: ' + ${person.personPremium}"></p>
             <p>Risks</p>
             <ul>

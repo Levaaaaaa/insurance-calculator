@@ -2,11 +2,13 @@ package lv.javaguru.travel.insurance.core.api.dto.v1;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lv.javaguru.travel.insurance.core.TE_PERSON_MEDICAL_STATUS;
 import lv.javaguru.travel.insurance.core.api.dto.util.BigDecimalSerializer;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -49,6 +51,9 @@ public class TravelCalculatePremiumResponseV1 extends CoreResponse {
     @JsonSerialize(using = BigDecimalSerializer.class)
     private BigDecimal cost;
     private UUID uuid;
+
+    @JsonProperty("medical_status")
+    private TE_PERSON_MEDICAL_STATUS personMedicalStatus;
     public TravelCalculatePremiumResponseV1(List<ValidationError> errors) {
         super(errors);
     }

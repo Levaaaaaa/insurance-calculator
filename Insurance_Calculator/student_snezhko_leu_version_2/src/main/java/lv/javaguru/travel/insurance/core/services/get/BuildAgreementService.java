@@ -1,6 +1,7 @@
 package lv.javaguru.travel.insurance.core.services.get;
 
 import lv.javaguru.travel.insurance.core.RISKS;
+import lv.javaguru.travel.insurance.core.TE_PERSON_MEDICAL_STATUS;
 import lv.javaguru.travel.insurance.core.api.dto.AgreementDTO;
 import lv.javaguru.travel.insurance.core.api.dto.PersonDTO;
 import lv.javaguru.travel.insurance.core.api.dto.RiskDTO;
@@ -29,7 +30,7 @@ public class BuildAgreementService {
 
     @Autowired
     private PersonRiskEntityRepository personRiskEntityRepository;
-    public AgreementDTO buildAgreement(AgreementEntityDomain agreementEntityDomain) {
+    public AgreementDTO buildAgreement(AgreementEntityDomain agreementEntityDomain){
         AgreementDTO agreementDTO = new AgreementDTO();
         agreementDTO.setAgreementDateFrom(agreementEntityDomain.getDateFrom());
         agreementDTO.setAgreementDateTo(agreementEntityDomain.getDateTo());
@@ -72,6 +73,13 @@ public class BuildAgreementService {
                     personDTO.setPersonIc(personDomain.getPersonIc());
                     personDTO.setPersonPremium(agreementPerson.getPremium());
                     personDTO.setSelectedRisks(buildPersonRisks(agreementPerson));
+                    try {
+                        personDTO.setPersonMedicalStatus(TE_PERSON_MEDICAL_STATUS.valueOf(agreementPerson.getPersonMedicalStatus()));
+                    }
+                    catch (IllegalArgumentException e) {
+                        //impossible, because user can't input invalid medical status in agreementGetController
+                        e.printStackTrace();
+                    }
                     return personDTO;
                 }).toList();
     }

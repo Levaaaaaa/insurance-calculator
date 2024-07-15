@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lv.javaguru.travel.insurance.core.TE_PERSON_MEDICAL_STATUS;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.math.BigDecimal;
@@ -32,4 +33,7 @@ public class PersonRequestV2DTO {
  //   @JsonAlias("selected_risks")
     private List<String> selectedRisks;
     private BigDecimal personPremium;
+
+    @JsonAlias("medical_status")
+    private String personMedicalStatus;
 }

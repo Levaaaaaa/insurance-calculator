@@ -17,4 +17,9 @@ public abstract class TravelPersonFieldValidationImpl implements TravelPersonFie
     public List<ValidationErrorDTO> validateList(PersonDTO person) {
         return null;
     }
+
+    @Override
+    public Optional<ValidationErrorDTO> validate(PersonDTO person, List<String> selectedRisks) {
+        return this.validate(person);
+    }
 }

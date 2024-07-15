@@ -32,6 +32,8 @@ public class AgreementPersonEntityDomain {
     @Column(name = "medical_risk_limit_level")
     private String medicalRiskLimitLevel;
 
+    @Column(name = "person_medical_status")
+    private String personMedicalStatus;
 
     @Column(name = "premium",
            precision = 10,

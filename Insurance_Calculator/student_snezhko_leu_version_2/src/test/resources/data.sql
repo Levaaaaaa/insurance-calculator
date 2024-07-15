@@ -258,21 +258,24 @@ VALUES('TRAVEL_CANCELLATION', 2);
 MERGE into agreement_persons(agreement,
                             person,
                             medical_risk_limit_level,
+                            person_medical_status,
                             premium)
 KEY(agreement, person)
 SELECT
         agr.id,
         pers.id,
         'CORRECT_MEDICAL_RISK_LIMIT_LEVEL',
+        'PERFECTLY_HEALTHY',
         10
 FROM agreements AS agr JOIN persons AS pers ON agr.id = pers.id;
 
 MERGE into agreement_persons(agreement,
                             person,
                             medical_risk_limit_level,
+                            person_medical_status,
                             premium)
 KEY(agreement, person)
-VALUES(1, 2, 'Medical_risk_limit_level', 5);
+VALUES(1, 2, 'Medical_risk_limit_level', 'TEST_MEDICAL_STATUS', 5);
 
 MERGE INTO person_risks(risk_ic, premium, person)
 KEY(risk_ic, person)
@@ -310,3 +313,20 @@ VALUES
 ('LATVIA',5),
 ('SPAIN',8),
 ('JAPAN', 9);
+
+MERGE INTO travel_evacuation_age_coefficient(age_from, age_to, coefficient)
+KEY(age_from, age_to)
+VALUES
+(0,9,5.00),
+(10,17,10.00),
+(18, 39, 20.00),
+(40, 64, 30.00),
+(65, 130, 50.00);
+
+MERGE INTO travel_evacuation_medical_coefficient(ic, coefficient)
+KEY(ic)
+VALUES
+('PERFECTLY_HEALTHY', 1.00),
+('SLIGHTLY_ILL', 2.00),
+('ILL', 3.00),
+('HARDLY_ILL', 4.00);

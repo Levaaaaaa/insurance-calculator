@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lv.javaguru.travel.insurance.core.TE_PERSON_MEDICAL_STATUS;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.math.BigDecimal;
@@ -41,4 +42,7 @@ public class TravelCalculatePremiumRequestV1 {
 
     private BigDecimal cost;
     private String medicalRiskLimitLevel;
+
+    @JsonAlias("medical_status")
+    private TE_PERSON_MEDICAL_STATUS personMedicalStatus;
 }
