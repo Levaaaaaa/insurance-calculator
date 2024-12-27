@@ -15,6 +15,6 @@ public interface CountryDefaultDayRateRepository extends JpaRepository<CountryDe
     public Optional<CountryDefaultDayRate> defaultDayRateByCountry(@Param("country_ic") String countryIc);
      */
 
-    @Query("SELECT cddr from CountryDefaultDayRate as cddr where country_ic = :ic")
+    @Query("SELECT cddr from CountryDefaultDayRate as cddr where cddr.countryIc = :ic")
     public Optional<CountryDefaultDayRate> findByCountryIc(@Param("ic")String countryIc);
 }

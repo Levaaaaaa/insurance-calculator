@@ -238,7 +238,7 @@ VALUES('CorrectFirstName', 'CorrectLastName', '12345678-1234-1234-1234-123456789
 
 MERGE INTO agreements(uuid, date_from, date_to, country, premium, cost)
 key (uuid)
-VALUES(0x00, '2050-02-02', '2050-02-03', 'SPAIN', 1, 10),
+VALUES('00000000-0000-0000-0000-000000000000', '2050-02-02', '2050-02-03', 'SPAIN', 1, 10),
 ('11111111-1111-1111-1111-111111111111',
 '2050-02-02',
 '2050-02-05',

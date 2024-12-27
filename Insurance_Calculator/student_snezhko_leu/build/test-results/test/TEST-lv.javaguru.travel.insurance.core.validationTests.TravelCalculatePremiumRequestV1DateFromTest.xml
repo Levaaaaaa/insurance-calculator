@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="lv.javaguru.travel.insurance.core.validationTests.TravelCalculatePremiumRequestV1DateFromTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-05-24T20:55:43" hostname="DESKTOP-QKNTNJC" time="0.025">
+<testsuite name="lv.javaguru.travel.insurance.core.validationTests.TravelCalculatePremiumRequestV1DateFromTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-14T12:53:57" hostname="DESKTOP-MNGQN6P" time="0.002">
   <properties/>
-  <testcase name="TravelCalculatePremiumRequestValidatorDateFromNotInPastTest()" classname="lv.javaguru.travel.insurance.core.validationTests.TravelCalculatePremiumRequestV1DateFromTest" time="0.021"/>
-  <testcase name="TravelCalculatePremiumRequestValidatorDateFromNotEmptyTest()" classname="lv.javaguru.travel.insurance.core.validationTests.TravelCalculatePremiumRequestV1DateFromTest" time="0.003"/>
+  <testcase name="TravelCalculatePremiumRequestValidatorDateFromNotInPastTest()" classname="lv.javaguru.travel.insurance.core.validationTests.TravelCalculatePremiumRequestV1DateFromTest" time="0.001"/>
+  <testcase name="TravelCalculatePremiumRequestValidatorDateFromNotEmptyTest()" classname="lv.javaguru.travel.insurance.core.validationTests.TravelCalculatePremiumRequestV1DateFromTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

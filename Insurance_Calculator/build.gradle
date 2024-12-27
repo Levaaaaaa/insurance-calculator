@@ -10,8 +10,8 @@ subprojects {
 	apply plugin: 'idea'
 
 	version = '0.0.1-SNAPSHOT'
-	sourceCompatibility = '18'
-	targetCompatibility = '18'
+	sourceCompatibility = '21'
+	targetCompatibility = '21'
 
 
 	repositories {
@@ -20,10 +20,12 @@ subprojects {
 
 	compileJava {
 		options.encoding = "UTF-8"
+		sourceCompatibility = '21'
 	}
 
 	compileTestJava {
 		options.encoding = "UTF-8"
+		sourceCompatibility = '21'
 	}
 
 	test {

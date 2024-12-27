@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="lv.javaguru.travel.insurance.core.validations.calculate.agreement.AgreementCountryValidationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-07-15T15:30:40" hostname="DESKTOP-QKNTNJC" time="0.016">
+<testsuite name="lv.javaguru.travel.insurance.core.validations.calculate.agreement.AgreementCountryValidationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-14T13:47:51" hostname="DESKTOP-MNGQN6P" time="0.006">
   <properties/>
-  <testcase name="AgreementDateFromIsNullTest()" classname="lv.javaguru.travel.insurance.core.validations.calculate.agreement.AgreementCountryValidationTest" time="0.003"/>
-  <testcase name="AgreementCountryExistsTest()" classname="lv.javaguru.travel.insurance.core.validations.calculate.agreement.AgreementCountryValidationTest" time="0.004"/>
+  <testcase name="AgreementDateFromIsNullTest()" classname="lv.javaguru.travel.insurance.core.validations.calculate.agreement.AgreementCountryValidationTest" time="0.004"/>
+  <testcase name="AgreementCountryExistsTest()" classname="lv.javaguru.travel.insurance.core.validations.calculate.agreement.AgreementCountryValidationTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

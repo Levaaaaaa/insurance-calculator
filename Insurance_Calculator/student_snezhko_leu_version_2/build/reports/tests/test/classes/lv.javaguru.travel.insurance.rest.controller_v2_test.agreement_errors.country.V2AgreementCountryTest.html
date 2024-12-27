@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.204s</div>
+<div class="counter">0.063s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,22 +79,22 @@
 </thead>
 <tr>
 <td class="success">execute17()</td>
-<td class="success">0.059s</td>
+<td class="success">0.017s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">execute18()</td>
-<td class="success">0.039s</td>
+<td class="success">0.013s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">execute21()</td>
-<td class="success">0.051s</td>
+<td class="success">0.018s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">execute22()</td>
-<td class="success">0.055s</td>
+<td class="success">0.015s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -102,37 +102,33 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2024-07-15 18:31:02,270 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [lv.javaguru.travel.insurance.rest.controller_v2_test.agreement_errors.country.V2AgreementCountryTest], using SpringBootContextLoader
-2024-07-15 18:31:02,271 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [lv.javaguru.travel.insurance.rest.controller_v2_test.agreement_errors.country.V2AgreementCountryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2024-07-15 18:31:02,271 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [lv.javaguru.travel.insurance.rest.controller_v2_test.agreement_errors.country.V2AgreementCountryTest]: V2AgreementCountryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-07-15 18:31:02,293 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration lv.javaguru.travel.insurance.InsuranceApplication for test class lv.javaguru.travel.insurance.rest.controller_v2_test.agreement_errors.country.V2AgreementCountryTest
-2024-07-15 18:31:02,296 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2024-07-15 18:31:02,298 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@e6522bd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3f471e59, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2920028c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@b51afb2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2c0604af, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2b3472a0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2a92128, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@48322f0, org.springframework.test.context.event.EventPublishingTestExecutionListener@183c6db3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1015bd66, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5b7e6e2d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@46775310, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3dddef98, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1e9bc8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@28b992e0]
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descript2_3_0_, classifier0_.title as title3_3_0_ from classifiers classifier0_ where classifier0_.id=?
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descript2_3_0_, classifier0_.title as title3_3_0_ from classifiers classifier0_ where classifier0_.id=?
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-2024-07-15 18:31:02,358 [Test worker] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 12
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descript2_3_0_, classifier0_.title as title3_3_0_ from classifiers classifier0_ where classifier0_.id=?
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descript2_3_0_, classifier0_.title as title3_3_0_ from classifiers classifier0_ where classifier0_.id=?
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-2024-07-15 18:31:02,410 [Test worker] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 15
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descript2_3_0_, classifier0_.title as title3_3_0_ from classifiers classifier0_ where classifier0_.id=?
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descript2_3_0_, classifier0_.title as title3_3_0_ from classifiers classifier0_ where classifier0_.id=?
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-2024-07-15 18:31:02,460 [Test worker] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 13
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descript2_3_0_, classifier0_.title as title3_3_0_ from classifiers classifier0_ where classifier0_.id=?
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descript2_3_0_, classifier0_.title as title3_3_0_ from classifiers classifier0_ where classifier0_.id=?
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-2024-07-15 18:31:02,510 [Test worker] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 11
+<pre>2024-12-14 16:47:56,929 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [lv.javaguru.travel.insurance.rest.controller_v2_test.agreement_errors.country.V2AgreementCountryTest]: V2AgreementCountryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-14 16:47:56,948 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration lv.javaguru.travel.insurance.InsuranceApplication for test class lv.javaguru.travel.insurance.rest.controller_v2_test.agreement_errors.country.V2AgreementCountryTest
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+2024-12-14 16:47:56,963 [Test worker] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 9
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+2024-12-14 16:47:56,978 [Test worker] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 7
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+2024-12-14 16:47:56,996 [Test worker] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 10
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+2024-12-14 16:47:57,012 [Test worker] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 8
 </pre>
 </span>
 </div>
@@ -144,7 +140,7 @@ Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as class
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 15 июл. 2024 г., 18:31:06</p>
+<a href="http://www.gradle.org">Gradle 8.10</a> at 14 дек. 2024 г., 16:47:57</p>
 </div>
 </div>
 </body>

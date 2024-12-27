@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.161s</div>
+<div class="counter">0.033s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">execute6()</td>
-<td class="success">0.091s</td>
+<td class="success">0.018s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">execute7()</td>
-<td class="success">0.070s</td>
+<td class="success">0.015s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,26 +92,22 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2024-07-15 18:31:01,502 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [lv.javaguru.travel.insurance.rest.controller_v1_test.person_error.birth_date.V1PersonBirthDateTest], using SpringBootContextLoader
-2024-07-15 18:31:01,504 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [lv.javaguru.travel.insurance.rest.controller_v1_test.person_error.birth_date.V1PersonBirthDateTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2024-07-15 18:31:01,505 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [lv.javaguru.travel.insurance.rest.controller_v1_test.person_error.birth_date.V1PersonBirthDateTest]: V1PersonBirthDateTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-07-15 18:31:01,525 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration lv.javaguru.travel.insurance.InsuranceApplication for test class lv.javaguru.travel.insurance.rest.controller_v1_test.person_error.birth_date.V1PersonBirthDateTest
-2024-07-15 18:31:01,528 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2024-07-15 18:31:01,530 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2e3b7b0b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@143211f1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@33650678, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3925aa6a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4c336d66, org.springframework.test.context.support.DirtiesContextTestExecutionListener@480a5088, org.springframework.test.context.transaction.TransactionalTestExecutionListener@53c7c937, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@47a55fdf, org.springframework.test.context.event.EventPublishingTestExecutionListener@10aa4210, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@a3ece9d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@675d209c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@aebd00f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4893b980, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@34a5dc29, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3a7243e1]
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descript2_3_0_, classifier0_.title as title3_3_0_ from classifiers classifier0_ where classifier0_.id=?
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descript2_3_0_, classifier0_.title as title3_3_0_ from classifiers classifier0_ where classifier0_.id=?
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descript2_3_0_, classifier0_.title as title3_3_0_ from classifiers classifier0_ where classifier0_.id=?
-2024-07-15 18:31:01,595 [Test worker] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 29
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descript2_3_0_, classifier0_.title as title3_3_0_ from classifiers classifier0_ where classifier0_.id=?
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descript2_3_0_, classifier0_.title as title3_3_0_ from classifiers classifier0_ where classifier0_.id=?
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descript2_3_0_, classifier0_.title as title3_3_0_ from classifiers classifier0_ where classifier0_.id=?
-2024-07-15 18:31:01,666 [Test worker] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 19
+<pre>2024-12-14 16:47:56,665 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [lv.javaguru.travel.insurance.rest.controller_v1_test.person_error.birth_date.V1PersonBirthDateTest]: V1PersonBirthDateTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-14 16:47:56,684 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration lv.javaguru.travel.insurance.InsuranceApplication for test class lv.javaguru.travel.insurance.rest.controller_v1_test.person_error.birth_date.V1PersonBirthDateTest
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+2024-12-14 16:47:56,702 [Test worker] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 9
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+2024-12-14 16:47:56,717 [Test worker] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 7
 </pre>
 </span>
 </div>
@@ -123,7 +119,7 @@ Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descr
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 15 июл. 2024 г., 18:31:06</p>
+<a href="http://www.gradle.org">Gradle 8.10</a> at 14 дек. 2024 г., 16:47:57</p>
 </div>
 </div>
 </body>

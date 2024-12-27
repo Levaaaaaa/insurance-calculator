@@ -10,6 +10,6 @@ import java.util.Optional;
 
 @Component
 public interface MedicalRiskLimitLevelRepository extends JpaRepository<MedicalRiskLimitLevel, Long> {
-    @Query("SELECT mrll FROM MedicalRiskLimitLevel AS mrll WHERE medicalRiskLimitLevelIc = :ic")
+    @Query("SELECT mrll FROM MedicalRiskLimitLevel AS mrll WHERE mrll.medicalRiskLimitLevelIc = :ic")
     public Optional<MedicalRiskLimitLevel> findCoefficientByLimitLevelIc(@Param("ic")String ic);
 }

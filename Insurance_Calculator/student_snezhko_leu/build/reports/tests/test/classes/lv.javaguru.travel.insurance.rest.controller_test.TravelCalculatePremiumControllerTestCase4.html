@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.051s</div>
+<div class="counter">0.013s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">TravelCalculatePremiumControllerTestCase4()</td>
-<td class="success">0.051s</td>
+<td class="success">0.013s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,19 +87,19 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2024-05-24 23:55:57,948 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper Neither @ContextConfiguration nor @ContextHierarchy found for test class [lv.javaguru.travel.insurance.rest.controller_test.TravelCalculatePremiumControllerTestCase4], using SpringBootContextLoader
-2024-05-24 23:55:57,949 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader Could not detect default resource locations for test class [lv.javaguru.travel.insurance.rest.controller_test.TravelCalculatePremiumControllerTestCase4]: no resource found for suffixes {-context.xml, Context.groovy}.
-2024-05-24 23:55:57,952 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils Could not detect default configuration classes for test class [lv.javaguru.travel.insurance.rest.controller_test.TravelCalculatePremiumControllerTestCase4]: TravelCalculatePremiumControllerTestCase4 does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-05-24 23:55:58,008 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper Found @SpringBootConfiguration lv.javaguru.travel.insurance.InsuranceApplication for test class lv.javaguru.travel.insurance.rest.controller_test.TravelCalculatePremiumControllerTestCase4
-2024-05-24 23:55:58,020 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2024-05-24 23:55:58,028 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5ceeab0c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7194f5b, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1e0be005, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1fd226da, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@36cd58e7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7be3baf2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a296643, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3443732a, org.springframework.test.context.event.EventPublishingTestExecutionListener@68950f25, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@e471cef, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7f2d681a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@50588ef6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@10744fff, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2662997a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@329b4814]
-Hibernate: select classifier0_.id as id1_1_, classifier0_.classifier_id as classifi4_1_, classifier0_.description as descript2_1_, classifier0_.ic as ic3_1_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_2_0_, classifier0_.description as descript2_2_0_, classifier0_.title as title3_2_0_ from classifiers classifier0_ where classifier0_.id=?
-Hibernate: select classifier0_.id as id1_1_, classifier0_.classifier_id as classifi4_1_, classifier0_.description as descript2_1_, classifier0_.ic as ic3_1_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_2_0_, classifier0_.description as descript2_2_0_, classifier0_.title as title3_2_0_ from classifiers classifier0_ where classifier0_.id=?
-2024-05-24 23:55:58,068 [Test worker] INFO  l.j.t.i.r.l.TravelCalculatePremiumRequestLogger {&quot;personFirstName&quot;:&quot;Vasja&quot;,&quot;personLastName&quot;:&quot;Pupkin&quot;,&quot;personIc&quot;:&quot;PERSON_0&quot;,&quot;agreementDateFrom&quot;:null,&quot;agreementDateTo&quot;:null,&quot;selectedRisks&quot;:[&quot;TRAVEL_MEDICAL&quot;],&quot;country&quot;:&quot;SPAIN&quot;,&quot;personBirthDate&quot;:&quot;2005-09-03&quot;,&quot;medicalRiskLimitLevel&quot;:&quot;LEVEL_10000&quot;}
-2024-05-24 23:55:58,068 [Test worker] INFO  l.j.t.i.r.l.TravelCalculatePremiumRequestExecutionTimeLogger Request processing time (ms): 9
-2024-05-24 23:55:58,071 [Test worker] INFO  l.j.t.i.r.l.TravelCalculatePremiumResponseLogger {&quot;errors&quot;:[{&quot;errorCode&quot;:&quot;ERROR_CODE_3&quot;,&quot;description&quot;:&quot;Field agreementDateFrom is empty!&quot;},{&quot;errorCode&quot;:&quot;ERROR_CODE_5&quot;,&quot;description&quot;:&quot;Field agreementDateTo is empty!&quot;}],&quot;personFirstName&quot;:null,&quot;personLastName&quot;:null,&quot;personIc&quot;:null,&quot;agreementDateFrom&quot;:null,&quot;agreementDateTo&quot;:null,&quot;agreementPremium&quot;:null,&quot;risks&quot;:null,&quot;country&quot;:null,&quot;personBirthDate&quot;:null,&quot;medicalRiskLimitLevel&quot;:null}
+<pre>2024-12-14 15:53:58 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [lv.javaguru.travel.insurance.rest.controller_test.TravelCalculatePremiumControllerTestCase4]: TravelCalculatePremiumControllerTestCase4 does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-14 15:53:58 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration lv.javaguru.travel.insurance.InsuranceApplication for test class lv.javaguru.travel.insurance.rest.controller_test.TravelCalculatePremiumControllerTestCase4
+2024-12-14 15:53:58 [Test worker] DEBUG org.hibernate.SQL - select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+2024-12-14 15:53:58 [Test worker] DEBUG org.hibernate.SQL - select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+2024-12-14 15:53:58 [Test worker] DEBUG org.hibernate.SQL - select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+2024-12-14 15:53:58 [Test worker] DEBUG org.hibernate.SQL - select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+2024-12-14 15:53:58 [Test worker] INFO  l.j.t.i.r.l.TravelCalculatePremiumRequestLogger - {&quot;personFirstName&quot;:&quot;Vasja&quot;,&quot;personLastName&quot;:&quot;Pupkin&quot;,&quot;personIc&quot;:&quot;PERSON_0&quot;,&quot;agreementDateFrom&quot;:null,&quot;agreementDateTo&quot;:null,&quot;selectedRisks&quot;:[&quot;TRAVEL_MEDICAL&quot;],&quot;country&quot;:&quot;SPAIN&quot;,&quot;personBirthDate&quot;:&quot;2005-09-03&quot;,&quot;medicalRiskLimitLevel&quot;:&quot;LEVEL_10000&quot;}
+2024-12-14 15:53:58 [Test worker] INFO  l.j.t.i.r.l.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 5
+2024-12-14 15:53:58 [Test worker] INFO  l.j.t.i.r.l.TravelCalculatePremiumResponseLogger - {&quot;errors&quot;:[{&quot;errorCode&quot;:&quot;ERROR_CODE_3&quot;,&quot;description&quot;:&quot;Field agreementDateFrom is empty!&quot;},{&quot;errorCode&quot;:&quot;ERROR_CODE_5&quot;,&quot;description&quot;:&quot;Field agreementDateTo is empty!&quot;}],&quot;personFirstName&quot;:null,&quot;personLastName&quot;:null,&quot;personIc&quot;:null,&quot;agreementDateFrom&quot;:null,&quot;agreementDateTo&quot;:null,&quot;agreementPremium&quot;:null,&quot;risks&quot;:null,&quot;country&quot;:null,&quot;personBirthDate&quot;:null,&quot;medicalRiskLimitLevel&quot;:null}
 </pre>
 </span>
 </div>
@@ -111,7 +111,7 @@ Hibernate: select classifier0_.id as id1_2_0_, classifier0_.description as descr
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 24 мая 2024 г., 23:56:08</p>
+<a href="http://www.gradle.org">Gradle 8.10</a> at 14 дек. 2024 г., 15:53:58</p>
 </div>
 </div>
 </body>

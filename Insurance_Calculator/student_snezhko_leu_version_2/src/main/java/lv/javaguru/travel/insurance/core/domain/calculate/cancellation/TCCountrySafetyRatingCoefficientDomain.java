@@ -1,11 +1,11 @@
 package lv.javaguru.travel.insurance.core.domain.calculate.cancellation;
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
 
 @Entity
 @Table(name = "travel_cancellation_country_safety_rating_coefficient")

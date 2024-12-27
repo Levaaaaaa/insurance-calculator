@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Gradle: uk.org.webcompere:model-assert:1.0.0" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/caches/modules-2/files-2.1/uk.org.webcompere/model-assert/1.0.0/9b160efd14af226d7cfd061177bfac296127eeee/model-assert-1.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/uk.org.webcompere/model-assert/1.0.0/9b160efd14af226d7cfd061177bfac296127eeee/model-assert-1.0.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

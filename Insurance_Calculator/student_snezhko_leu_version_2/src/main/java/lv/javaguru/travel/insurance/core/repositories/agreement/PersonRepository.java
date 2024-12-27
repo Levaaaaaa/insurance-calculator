@@ -13,10 +13,10 @@ public interface PersonRepository extends JpaRepository<PersonDTODomain, Long> {
 
     @Query("SELECT p FROM PersonDTODomain p" +
             " WHERE p.personFirstName = :fn" +
-            " AND p.personLastName = :ln" +
+            " AND p.personLastName = :lastName" +
             " AND p.personIc = :i")
     Optional<PersonDTODomain> findBy(@Param("fn") String firstName,
-                                            @Param("ln") String lastName,
+                                            @Param("lastName") String lastName,
                                             @Param("i") UUID ic
     );
 

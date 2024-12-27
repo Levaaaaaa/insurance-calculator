@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="lv.javaguru.travel.insurance.core.util.ErrorCodeUtilTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-07-15T15:30:39" hostname="DESKTOP-QKNTNJC" time="0.252">
+<testsuite name="lv.javaguru.travel.insurance.core.util.ErrorCodeUtilTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-14T13:47:51" hostname="DESKTOP-MNGQN6P" time="0.129">
   <properties/>
-  <testcase name="shouldGetErrorDescription()" classname="lv.javaguru.travel.insurance.core.util.ErrorCodeUtilTest" time="0.248"/>
-  <testcase name="shouldGetErrorDescriptionWithPlaceholder()" classname="lv.javaguru.travel.insurance.core.util.ErrorCodeUtilTest" time="0.004"/>
+  <testcase name="shouldGetErrorDescription()" classname="lv.javaguru.travel.insurance.core.util.ErrorCodeUtilTest" time="0.126"/>
+  <testcase name="shouldGetErrorDescriptionWithPlaceholder()" classname="lv.javaguru.travel.insurance.core.util.ErrorCodeUtilTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

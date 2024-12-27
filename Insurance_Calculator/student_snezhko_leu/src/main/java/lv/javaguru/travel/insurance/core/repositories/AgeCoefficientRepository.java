@@ -23,7 +23,7 @@ public interface AgeCoefficientRepository extends JpaRepository<AgeCoefficient, 
 
 
     @Query("SELECT ac from AgeCoefficient as ac " +
-            "where age_from <= :age and age_to >= :age")
+            "where ac.ageFrom <= :age and ac.ageTo >= :age")
     public Optional<AgeCoefficient> findByAgeFromAndAgeTo(@Param("age")Integer age);
 
 

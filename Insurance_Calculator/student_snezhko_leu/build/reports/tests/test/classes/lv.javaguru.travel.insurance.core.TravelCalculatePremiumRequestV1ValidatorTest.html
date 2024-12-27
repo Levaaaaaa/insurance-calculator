@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.517s</div>
+<div class="counter">0.221s</div>
 <p>duration</p>
 </div>
 </td>
@@ -66,6 +66,9 @@
 <li>
 <a href="#tab1">Standard output</a>
 </li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Tests</h2>
@@ -79,12 +82,12 @@
 </thead>
 <tr>
 <td class="success">TravelCalculatePremiumRequestValidatorOneErrorTest()</td>
-<td class="success">1.485s</td>
+<td class="success">0.216s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">TravelCalculatePremiumRequestValidatorTwoErrorsTest()</td>
-<td class="success">0.032s</td>
+<td class="success">0.005s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,68 +95,80 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>23:54:53,998 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
-23:54:53,998 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/D:/Leva/BSU/Java_Internship_2023/bsu-java-internship-2023/student_snezhko_leu/build/resources/main/logback.xml]
-23:54:54,256 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
-23:54:54,280 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-23:54:54,293 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [CONSOLE]
-23:54:54,327 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-23:54:54,440 |-WARN in ch.qos.logback.classic.pattern.DateConverter@409986fe - Could not instantiate SimpleDateFormat with pattern ISO88601 java.lang.IllegalArgumentException: Illegal pattern character 'I'
-	at java.lang.IllegalArgumentException: Illegal pattern character 'I'
-	at 	at java.base/java.text.SimpleDateFormat.compile(SimpleDateFormat.java:849)
-	at 	at java.base/java.text.SimpleDateFormat.initialize(SimpleDateFormat.java:657)
-	at 	at java.base/java.text.SimpleDateFormat.&lt;init&gt;(SimpleDateFormat.java:628)
-	at 	at java.base/java.text.SimpleDateFormat.&lt;init&gt;(SimpleDateFormat.java:603)
-	at 	at ch.qos.logback.core.util.CachingDateFormatter.&lt;init&gt;(CachingDateFormatter.java:33)
-	at 	at ch.qos.logback.classic.pattern.DateConverter.start(DateConverter.java:41)
+<pre>15:53:49,914 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.11
+15:53:49,914 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5fcacc0 - Here is a list of configurators discovered as a service, by rank: 
+15:53:49,914 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5fcacc0 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+15:53:49,914 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5fcacc0 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+15:53:49,914 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5fcacc0 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+15:53:49,925 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5fcacc0 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 9 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+15:53:49,925 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5fcacc0 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+15:53:49,933 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5fcacc0 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+15:53:49,954 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+15:53:49,954 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+15:53:49,954 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5fcacc0 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 21 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+15:53:49,954 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5fcacc0 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+15:53:49,954 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5fcacc0 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+15:53:49,954 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+15:53:49,954 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/D:/Leva/Program/repos/My_Portfolio/Insurance_Calculator/student_snezhko_leu/build/resources/main/logback.xml]
+15:53:50,149 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+15:53:50,149 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:53:50,158 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+15:53:50,194 |-WARN in ch.qos.logback.classic.pattern.DateConverter@533b266e - Could not instantiate SimpleDateFormat with pattern ISO88601 java.lang.IllegalArgumentException: Unknown pattern letter: I
+	at java.lang.IllegalArgumentException: Unknown pattern letter: I
+	at 	at java.base/java.time.format.DateTimeFormatterBuilder.parsePattern(DateTimeFormatterBuilder.java:2009)
+	at 	at java.base/java.time.format.DateTimeFormatterBuilder.appendPattern(DateTimeFormatterBuilder.java:1899)
+	at 	at java.base/java.time.format.DateTimeFormatter.ofPattern(DateTimeFormatter.java:569)
+	at 	at ch.qos.logback.core.util.CachingDateFormatter.&lt;init&gt;(CachingDateFormatter.java:63)
+	at 	at ch.qos.logback.classic.pattern.DateConverter.start(DateConverter.java:58)
 	at 	at ch.qos.logback.core.pattern.ConverterUtil.startConverters(ConverterUtil.java:37)
-	at 	at ch.qos.logback.core.pattern.PatternLayoutBase.start(PatternLayoutBase.java:89)
+	at 	at ch.qos.logback.core.pattern.PatternLayoutBase.start(PatternLayoutBase.java:90)
 	at 	at ch.qos.logback.classic.encoder.PatternLayoutEncoder.start(PatternLayoutEncoder.java:28)
-	at 	at ch.qos.logback.core.joran.action.NestedComplexPropertyIA.end(NestedComplexPropertyIA.java:161)
-	at 	at ch.qos.logback.core.joran.spi.Interpreter.callEndAction(Interpreter.java:309)
-	at 	at ch.qos.logback.core.joran.spi.Interpreter.endElement(Interpreter.java:193)
-	at 	at ch.qos.logback.core.joran.spi.Interpreter.endElement(Interpreter.java:179)
-	at 	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:62)
-	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:165)
-	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:152)
-	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:110)
-	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:53)
-	at 	at ch.qos.logback.classic.util.ContextInitializer.configureByResource(ContextInitializer.java:64)
-	at 	at ch.qos.logback.classic.util.ContextInitializer.autoConfig(ContextInitializer.java:134)
-	at 	at org.slf4j.impl.StaticLoggerBinder.init(StaticLoggerBinder.java:84)
-	at 	at org.slf4j.impl.StaticLoggerBinder.&lt;clinit&gt;(StaticLoggerBinder.java:55)
-	at 	at org.slf4j.LoggerFactory.bind(LoggerFactory.java:150)
-	at 	at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:124)
-	at 	at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:417)
-	at 	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:362)
-	at 	at org.apache.commons.logging.LogAdapter$Slf4jAdapter.createLocationAwareLog(LogAdapter.java:130)
-	at 	at org.apache.commons.logging.LogAdapter.createLog(LogAdapter.java:91)
+	at 	at ch.qos.logback.core.model.processor.ImplicitModelHandler.postHandleComplex(ImplicitModelHandler.java:208)
+	at 	at ch.qos.logback.core.model.processor.ImplicitModelHandler.postHandle(ImplicitModelHandler.java:186)
+	at 	at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:257)
+	at 	at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+	at 	at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+	at 	at ch.qos.logback.core.model.processor.DefaultProcessor.traversalLoop(DefaultProcessor.java:90)
+	at 	at ch.qos.logback.core.model.processor.DefaultProcessor.process(DefaultProcessor.java:106)
+	at 	at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:208)
+	at 	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:170)
+	at 	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:122)
+	at 	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:65)
+	at 	at ch.qos.logback.classic.util.DefaultJoranConfigurator.configureByResource(DefaultJoranConfigurator.java:68)
+	at 	at ch.qos.logback.classic.util.DefaultJoranConfigurator.configure(DefaultJoranConfigurator.java:35)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.invokeConfigure(ContextInitializer.java:122)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.autoConfig(ContextInitializer.java:97)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.autoConfig(ContextInitializer.java:65)
+	at 	at ch.qos.logback.classic.spi.LogbackServiceProvider.initializeLoggerContext(LogbackServiceProvider.java:52)
+	at 	at ch.qos.logback.classic.spi.LogbackServiceProvider.initialize(LogbackServiceProvider.java:41)
+	at 	at org.slf4j.LoggerFactory.bind(LoggerFactory.java:195)
+	at 	at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:182)
+	at 	at org.slf4j.LoggerFactory.getProvider(LoggerFactory.java:490)
+	at 	at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:476)
+	at 	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:425)
+	at 	at org.apache.commons.logging.LogAdapter$Slf4jAdapter.createLocationAwareLog(LogAdapter.java:121)
+	at 	at org.apache.commons.logging.LogAdapter.createLog(LogAdapter.java:95)
 	at 	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:67)
 	at 	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:59)
-	at 	at org.springframework.test.util.ReflectionTestUtils.&lt;clinit&gt;(ReflectionTestUtils.java:75)
-	at 	at lv.javaguru.travel.insurance.core.TravelCalculatePremiumRequestV1ValidatorTest.TravelCalculatePremiumRequestValidatorOneErrorTest(TravelCalculatePremiumRequestV1ValidatorTest.java:51)
-	at 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at 	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at 	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at 	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at 	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at 	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at 	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at 	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at 	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at 	at org.springframework.test.context.TestContextManager.&lt;clinit&gt;(TestContextManager.java:91)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore.lambda$getOrComputeIfAbsent$5(NamespacedHierarchicalStore.java:147)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore$MemoizingSupplier.computeValue(NamespacedHierarchicalStore.java:372)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore$MemoizingSupplier.get(NamespacedHierarchicalStore.java:361)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore$StoredValue.evaluate(NamespacedHierarchicalStore.java:308)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore$StoredValue.access$200(NamespacedHierarchicalStore.java:287)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore.getOrComputeIfAbsent(NamespacedHierarchicalStore.java:149)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore.getOrComputeIfAbsent(NamespacedHierarchicalStore.java:168)
+	at 	at org.junit.jupiter.engine.execution.NamespaceAwareStore.lambda$getOrComputeIfAbsent$3(NamespaceAwareStore.java:66)
+	at 	at org.junit.jupiter.engine.execution.NamespaceAwareStore.accessStore(NamespaceAwareStore.java:90)
+	at 	at org.junit.jupiter.engine.execution.NamespaceAwareStore.getOrComputeIfAbsent(NamespaceAwareStore.java:65)
+	at 	at org.springframework.test.context.junit.jupiter.SpringExtension.getTestContextManager(SpringExtension.java:366)
+	at 	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeAll(SpringExtension.java:131)
+	at 	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllCallbacks$12(ClassBasedTestDescriptor.java:396)
 	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at 	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllCallbacks(ClassBasedTestDescriptor.java:396)
+	at 	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:212)
+	at 	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:85)
+	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:148)
 	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
 	at 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
@@ -161,17 +176,7 @@
 	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -192,86 +197,85 @@
 	at 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
 	at 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
 	at 	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at 	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+	at 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
 	at 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at 	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at 	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at 	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
 	at 	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
 	at 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-23:54:54,443 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
-23:54:54,452 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE_APPENDER]
-23:54:54,457 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-23:54:54,457 |-WARN in ch.qos.logback.classic.pattern.DateConverter@5f780a86 - Could not instantiate SimpleDateFormat with pattern ISO88601 java.lang.IllegalArgumentException: Illegal pattern character 'I'
-	at java.lang.IllegalArgumentException: Illegal pattern character 'I'
-	at 	at java.base/java.text.SimpleDateFormat.compile(SimpleDateFormat.java:849)
-	at 	at java.base/java.text.SimpleDateFormat.initialize(SimpleDateFormat.java:657)
-	at 	at java.base/java.text.SimpleDateFormat.&lt;init&gt;(SimpleDateFormat.java:628)
-	at 	at java.base/java.text.SimpleDateFormat.&lt;init&gt;(SimpleDateFormat.java:603)
-	at 	at ch.qos.logback.core.util.CachingDateFormatter.&lt;init&gt;(CachingDateFormatter.java:33)
-	at 	at ch.qos.logback.classic.pattern.DateConverter.start(DateConverter.java:41)
+15:53:50,199 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE_APPENDER]
+15:53:50,199 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+15:53:50,204 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+15:53:50,204 |-WARN in ch.qos.logback.classic.pattern.DateConverter@1d71006f - Could not instantiate SimpleDateFormat with pattern ISO88601 java.lang.IllegalArgumentException: Unknown pattern letter: I
+	at java.lang.IllegalArgumentException: Unknown pattern letter: I
+	at 	at java.base/java.time.format.DateTimeFormatterBuilder.parsePattern(DateTimeFormatterBuilder.java:2009)
+	at 	at java.base/java.time.format.DateTimeFormatterBuilder.appendPattern(DateTimeFormatterBuilder.java:1899)
+	at 	at java.base/java.time.format.DateTimeFormatter.ofPattern(DateTimeFormatter.java:569)
+	at 	at ch.qos.logback.core.util.CachingDateFormatter.&lt;init&gt;(CachingDateFormatter.java:63)
+	at 	at ch.qos.logback.classic.pattern.DateConverter.start(DateConverter.java:58)
 	at 	at ch.qos.logback.core.pattern.ConverterUtil.startConverters(ConverterUtil.java:37)
-	at 	at ch.qos.logback.core.pattern.PatternLayoutBase.start(PatternLayoutBase.java:89)
+	at 	at ch.qos.logback.core.pattern.PatternLayoutBase.start(PatternLayoutBase.java:90)
 	at 	at ch.qos.logback.classic.encoder.PatternLayoutEncoder.start(PatternLayoutEncoder.java:28)
-	at 	at ch.qos.logback.core.joran.action.NestedComplexPropertyIA.end(NestedComplexPropertyIA.java:161)
-	at 	at ch.qos.logback.core.joran.spi.Interpreter.callEndAction(Interpreter.java:309)
-	at 	at ch.qos.logback.core.joran.spi.Interpreter.endElement(Interpreter.java:193)
-	at 	at ch.qos.logback.core.joran.spi.Interpreter.endElement(Interpreter.java:179)
-	at 	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:62)
-	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:165)
-	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:152)
-	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:110)
-	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:53)
-	at 	at ch.qos.logback.classic.util.ContextInitializer.configureByResource(ContextInitializer.java:64)
-	at 	at ch.qos.logback.classic.util.ContextInitializer.autoConfig(ContextInitializer.java:134)
-	at 	at org.slf4j.impl.StaticLoggerBinder.init(StaticLoggerBinder.java:84)
-	at 	at org.slf4j.impl.StaticLoggerBinder.&lt;clinit&gt;(StaticLoggerBinder.java:55)
-	at 	at org.slf4j.LoggerFactory.bind(LoggerFactory.java:150)
-	at 	at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:124)
-	at 	at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:417)
-	at 	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:362)
-	at 	at org.apache.commons.logging.LogAdapter$Slf4jAdapter.createLocationAwareLog(LogAdapter.java:130)
-	at 	at org.apache.commons.logging.LogAdapter.createLog(LogAdapter.java:91)
+	at 	at ch.qos.logback.core.model.processor.ImplicitModelHandler.postHandleComplex(ImplicitModelHandler.java:208)
+	at 	at ch.qos.logback.core.model.processor.ImplicitModelHandler.postHandle(ImplicitModelHandler.java:186)
+	at 	at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:257)
+	at 	at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+	at 	at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+	at 	at ch.qos.logback.core.model.processor.DefaultProcessor.traversalLoop(DefaultProcessor.java:90)
+	at 	at ch.qos.logback.core.model.processor.DefaultProcessor.process(DefaultProcessor.java:106)
+	at 	at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:208)
+	at 	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:170)
+	at 	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:122)
+	at 	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:65)
+	at 	at ch.qos.logback.classic.util.DefaultJoranConfigurator.configureByResource(DefaultJoranConfigurator.java:68)
+	at 	at ch.qos.logback.classic.util.DefaultJoranConfigurator.configure(DefaultJoranConfigurator.java:35)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.invokeConfigure(ContextInitializer.java:122)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.autoConfig(ContextInitializer.java:97)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.autoConfig(ContextInitializer.java:65)
+	at 	at ch.qos.logback.classic.spi.LogbackServiceProvider.initializeLoggerContext(LogbackServiceProvider.java:52)
+	at 	at ch.qos.logback.classic.spi.LogbackServiceProvider.initialize(LogbackServiceProvider.java:41)
+	at 	at org.slf4j.LoggerFactory.bind(LoggerFactory.java:195)
+	at 	at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:182)
+	at 	at org.slf4j.LoggerFactory.getProvider(LoggerFactory.java:490)
+	at 	at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:476)
+	at 	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:425)
+	at 	at org.apache.commons.logging.LogAdapter$Slf4jAdapter.createLocationAwareLog(LogAdapter.java:121)
+	at 	at org.apache.commons.logging.LogAdapter.createLog(LogAdapter.java:95)
 	at 	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:67)
 	at 	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:59)
-	at 	at org.springframework.test.util.ReflectionTestUtils.&lt;clinit&gt;(ReflectionTestUtils.java:75)
-	at 	at lv.javaguru.travel.insurance.core.TravelCalculatePremiumRequestV1ValidatorTest.TravelCalculatePremiumRequestValidatorOneErrorTest(TravelCalculatePremiumRequestV1ValidatorTest.java:51)
-	at 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at 	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at 	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at 	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at 	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at 	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at 	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at 	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at 	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at 	at org.springframework.test.context.TestContextManager.&lt;clinit&gt;(TestContextManager.java:91)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore.lambda$getOrComputeIfAbsent$5(NamespacedHierarchicalStore.java:147)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore$MemoizingSupplier.computeValue(NamespacedHierarchicalStore.java:372)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore$MemoizingSupplier.get(NamespacedHierarchicalStore.java:361)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore$StoredValue.evaluate(NamespacedHierarchicalStore.java:308)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore$StoredValue.access$200(NamespacedHierarchicalStore.java:287)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore.getOrComputeIfAbsent(NamespacedHierarchicalStore.java:149)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore.getOrComputeIfAbsent(NamespacedHierarchicalStore.java:168)
+	at 	at org.junit.jupiter.engine.execution.NamespaceAwareStore.lambda$getOrComputeIfAbsent$3(NamespaceAwareStore.java:66)
+	at 	at org.junit.jupiter.engine.execution.NamespaceAwareStore.accessStore(NamespaceAwareStore.java:90)
+	at 	at org.junit.jupiter.engine.execution.NamespaceAwareStore.getOrComputeIfAbsent(NamespaceAwareStore.java:65)
+	at 	at org.springframework.test.context.junit.jupiter.SpringExtension.getTestContextManager(SpringExtension.java:366)
+	at 	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeAll(SpringExtension.java:131)
+	at 	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllCallbacks$12(ClassBasedTestDescriptor.java:396)
 	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at 	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllCallbacks(ClassBasedTestDescriptor.java:396)
+	at 	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:212)
+	at 	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:85)
+	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:148)
 	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
 	at 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
@@ -279,17 +283,7 @@
 	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -310,95 +304,94 @@
 	at 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
 	at 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
 	at 	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at 	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+	at 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
 	at 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at 	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at 	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at 	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
 	at 	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
 	at 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-23:54:54,530 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1147943200 - No compression will be used
-23:54:54,532 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1147943200 - Will use the pattern ./logs/archived/application-logger-%d{yyyy-MM-dd}.%i.log for the active file
-23:54:54,538 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2eaef76d - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/archived/application-logger-%d{yyyy-MM-dd}.%i.log'.
-23:54:54,538 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2eaef76d - Roll-over at midnight.
-23:54:54,627 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2eaef76d - Setting initial period to Sat May 18 21:57:36 EEST 2024
-23:54:54,627 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2eaef76d - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
-23:54:54,627 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2eaef76d - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
-23:54:54,637 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_APPENDER] - Active log file name: ./logs/application-logger.log
-23:54:54,637 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_APPENDER] - File property is set to [./logs/application-logger.log]
-23:54:54,638 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
-23:54:54,638 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [REQUEST-RESPONSE-FILE-APPENDER]
-23:54:54,639 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-23:54:54,640 |-WARN in ch.qos.logback.classic.pattern.DateConverter@2b329bbd - Could not instantiate SimpleDateFormat with pattern ISO88601 java.lang.IllegalArgumentException: Illegal pattern character 'I'
-	at java.lang.IllegalArgumentException: Illegal pattern character 'I'
-	at 	at java.base/java.text.SimpleDateFormat.compile(SimpleDateFormat.java:849)
-	at 	at java.base/java.text.SimpleDateFormat.initialize(SimpleDateFormat.java:657)
-	at 	at java.base/java.text.SimpleDateFormat.&lt;init&gt;(SimpleDateFormat.java:628)
-	at 	at java.base/java.text.SimpleDateFormat.&lt;init&gt;(SimpleDateFormat.java:603)
-	at 	at ch.qos.logback.core.util.CachingDateFormatter.&lt;init&gt;(CachingDateFormatter.java:33)
-	at 	at ch.qos.logback.classic.pattern.DateConverter.start(DateConverter.java:41)
+15:53:50,238 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1533547487 - No compression will be used
+15:53:50,238 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1533547487 - Will use the pattern ./logs/archived/application-logger-%d{yyyy-MM-dd}.%i.log for the active file
+15:53:50,243 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@5f2606b - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/archived/application-logger-%d{yyyy-MM-dd}.%i.log'.
+15:53:50,243 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@5f2606b - Roll-over at midnight.
+15:53:50,243 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@5f2606b - Setting initial period to 2024-12-14T12:52:02.634Z
+15:53:50,243 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@5f2606b - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+15:53:50,243 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@5f2606b - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+15:53:50,254 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_APPENDER] - Active log file name: ./logs/application-logger.log
+15:53:50,254 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE_APPENDER] - File property is set to [./logs/application-logger.log]
+15:53:50,254 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [REQUEST-RESPONSE-FILE-APPENDER]
+15:53:50,254 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+15:53:50,254 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+15:53:50,254 |-WARN in ch.qos.logback.classic.pattern.DateConverter@2b58f754 - Could not instantiate SimpleDateFormat with pattern ISO88601 java.lang.IllegalArgumentException: Unknown pattern letter: I
+	at java.lang.IllegalArgumentException: Unknown pattern letter: I
+	at 	at java.base/java.time.format.DateTimeFormatterBuilder.parsePattern(DateTimeFormatterBuilder.java:2009)
+	at 	at java.base/java.time.format.DateTimeFormatterBuilder.appendPattern(DateTimeFormatterBuilder.java:1899)
+	at 	at java.base/java.time.format.DateTimeFormatter.ofPattern(DateTimeFormatter.java:569)
+	at 	at ch.qos.logback.core.util.CachingDateFormatter.&lt;init&gt;(CachingDateFormatter.java:63)
+	at 	at ch.qos.logback.classic.pattern.DateConverter.start(DateConverter.java:58)
 	at 	at ch.qos.logback.core.pattern.ConverterUtil.startConverters(ConverterUtil.java:37)
-	at 	at ch.qos.logback.core.pattern.PatternLayoutBase.start(PatternLayoutBase.java:89)
+	at 	at ch.qos.logback.core.pattern.PatternLayoutBase.start(PatternLayoutBase.java:90)
 	at 	at ch.qos.logback.classic.encoder.PatternLayoutEncoder.start(PatternLayoutEncoder.java:28)
-	at 	at ch.qos.logback.core.joran.action.NestedComplexPropertyIA.end(NestedComplexPropertyIA.java:161)
-	at 	at ch.qos.logback.core.joran.spi.Interpreter.callEndAction(Interpreter.java:309)
-	at 	at ch.qos.logback.core.joran.spi.Interpreter.endElement(Interpreter.java:193)
-	at 	at ch.qos.logback.core.joran.spi.Interpreter.endElement(Interpreter.java:179)
-	at 	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:62)
-	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:165)
-	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:152)
-	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:110)
-	at 	at ch.qos.logback.core.joran.GenericConfigurator.doConfigure(GenericConfigurator.java:53)
-	at 	at ch.qos.logback.classic.util.ContextInitializer.configureByResource(ContextInitializer.java:64)
-	at 	at ch.qos.logback.classic.util.ContextInitializer.autoConfig(ContextInitializer.java:134)
-	at 	at org.slf4j.impl.StaticLoggerBinder.init(StaticLoggerBinder.java:84)
-	at 	at org.slf4j.impl.StaticLoggerBinder.&lt;clinit&gt;(StaticLoggerBinder.java:55)
-	at 	at org.slf4j.LoggerFactory.bind(LoggerFactory.java:150)
-	at 	at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:124)
-	at 	at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:417)
-	at 	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:362)
-	at 	at org.apache.commons.logging.LogAdapter$Slf4jAdapter.createLocationAwareLog(LogAdapter.java:130)
-	at 	at org.apache.commons.logging.LogAdapter.createLog(LogAdapter.java:91)
+	at 	at ch.qos.logback.core.model.processor.ImplicitModelHandler.postHandleComplex(ImplicitModelHandler.java:208)
+	at 	at ch.qos.logback.core.model.processor.ImplicitModelHandler.postHandle(ImplicitModelHandler.java:186)
+	at 	at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:257)
+	at 	at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+	at 	at ch.qos.logback.core.model.processor.DefaultProcessor.secondPhaseTraverse(DefaultProcessor.java:253)
+	at 	at ch.qos.logback.core.model.processor.DefaultProcessor.traversalLoop(DefaultProcessor.java:90)
+	at 	at ch.qos.logback.core.model.processor.DefaultProcessor.process(DefaultProcessor.java:106)
+	at 	at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:208)
+	at 	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:170)
+	at 	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:122)
+	at 	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:65)
+	at 	at ch.qos.logback.classic.util.DefaultJoranConfigurator.configureByResource(DefaultJoranConfigurator.java:68)
+	at 	at ch.qos.logback.classic.util.DefaultJoranConfigurator.configure(DefaultJoranConfigurator.java:35)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.invokeConfigure(ContextInitializer.java:122)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.autoConfig(ContextInitializer.java:97)
+	at 	at ch.qos.logback.classic.util.ContextInitializer.autoConfig(ContextInitializer.java:65)
+	at 	at ch.qos.logback.classic.spi.LogbackServiceProvider.initializeLoggerContext(LogbackServiceProvider.java:52)
+	at 	at ch.qos.logback.classic.spi.LogbackServiceProvider.initialize(LogbackServiceProvider.java:41)
+	at 	at org.slf4j.LoggerFactory.bind(LoggerFactory.java:195)
+	at 	at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:182)
+	at 	at org.slf4j.LoggerFactory.getProvider(LoggerFactory.java:490)
+	at 	at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:476)
+	at 	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:425)
+	at 	at org.apache.commons.logging.LogAdapter$Slf4jAdapter.createLocationAwareLog(LogAdapter.java:121)
+	at 	at org.apache.commons.logging.LogAdapter.createLog(LogAdapter.java:95)
 	at 	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:67)
 	at 	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:59)
-	at 	at org.springframework.test.util.ReflectionTestUtils.&lt;clinit&gt;(ReflectionTestUtils.java:75)
-	at 	at lv.javaguru.travel.insurance.core.TravelCalculatePremiumRequestV1ValidatorTest.TravelCalculatePremiumRequestValidatorOneErrorTest(TravelCalculatePremiumRequestV1ValidatorTest.java:51)
-	at 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at 	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at 	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at 	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at 	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at 	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at 	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at 	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at 	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at 	at org.springframework.test.context.TestContextManager.&lt;clinit&gt;(TestContextManager.java:91)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore.lambda$getOrComputeIfAbsent$5(NamespacedHierarchicalStore.java:147)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore$MemoizingSupplier.computeValue(NamespacedHierarchicalStore.java:372)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore$MemoizingSupplier.get(NamespacedHierarchicalStore.java:361)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore$StoredValue.evaluate(NamespacedHierarchicalStore.java:308)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore$StoredValue.access$200(NamespacedHierarchicalStore.java:287)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore.getOrComputeIfAbsent(NamespacedHierarchicalStore.java:149)
+	at 	at org.junit.platform.engine.support.store.NamespacedHierarchicalStore.getOrComputeIfAbsent(NamespacedHierarchicalStore.java:168)
+	at 	at org.junit.jupiter.engine.execution.NamespaceAwareStore.lambda$getOrComputeIfAbsent$3(NamespaceAwareStore.java:66)
+	at 	at org.junit.jupiter.engine.execution.NamespaceAwareStore.accessStore(NamespaceAwareStore.java:90)
+	at 	at org.junit.jupiter.engine.execution.NamespaceAwareStore.getOrComputeIfAbsent(NamespaceAwareStore.java:65)
+	at 	at org.springframework.test.context.junit.jupiter.SpringExtension.getTestContextManager(SpringExtension.java:366)
+	at 	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeAll(SpringExtension.java:131)
+	at 	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllCallbacks$12(ClassBasedTestDescriptor.java:396)
 	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at 	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllCallbacks(ClassBasedTestDescriptor.java:396)
+	at 	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:212)
+	at 	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:85)
+	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:148)
 	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
 	at 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
@@ -406,17 +399,7 @@
 	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -437,46 +420,66 @@
 	at 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
 	at 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
 	at 	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at 	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)
+	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)
+	at 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)
+	at 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
 	at 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at 	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at 	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at 	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
 	at 	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
 	at 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-23:54:54,642 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@880908391 - No compression will be used
-23:54:54,643 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@880908391 - Will use the pattern ./logs/archived/request-response-logger-%d{yyyy-MM-dd}.%i.log for the active file
-23:54:54,644 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@118102ee - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/archived/request-response-logger-%d{yyyy-MM-dd}.%i.log'.
-23:54:54,644 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@118102ee - Roll-over at midnight.
-23:54:54,645 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@118102ee - Setting initial period to Sat Mar 23 18:24:42 EET 2024
-23:54:54,645 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@118102ee - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
-23:54:54,645 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@118102ee - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
-23:54:54,670 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[REQUEST-RESPONSE-FILE-APPENDER] - Active log file name: ./logs/request-response-logger.log
-23:54:54,670 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[REQUEST-RESPONSE-FILE-APPENDER] - File property is set to [./logs/request-response-logger.log]
-23:54:54,670 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
-23:54:54,670 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [CONSOLE] to Logger[ROOT]
-23:54:54,671 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE_APPENDER] to Logger[ROOT]
-23:54:54,672 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [lv.javaguru.travel.insurance.rest.loggers.TravelCalculatePremiumRequestLogger] to INFO
-23:54:54,672 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [REQUEST-RESPONSE-FILE-APPENDER] to Logger[lv.javaguru.travel.insurance.rest.loggers.TravelCalculatePremiumRequestLogger]
-23:54:54,672 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [lv.javaguru.travel.insurance.rest.loggers.TravelCalculatePremiumResponseLogger] to INFO
-23:54:54,672 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [REQUEST-RESPONSE-FILE-APPENDER] to Logger[lv.javaguru.travel.insurance.rest.loggers.TravelCalculatePremiumResponseLogger]
-23:54:54,672 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
-23:54:54,675 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@48cd9a2c - Registering current configuration as safe fallback point
+15:53:50,254 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1052768296 - No compression will be used
+15:53:50,254 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1052768296 - Will use the pattern ./logs/archived/request-response-logger-%d{yyyy-MM-dd}.%i.log for the active file
+15:53:50,254 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2552f2cb - The date pattern is 'yyyy-MM-dd' from file name pattern './logs/archived/request-response-logger-%d{yyyy-MM-dd}.%i.log'.
+15:53:50,254 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2552f2cb - Roll-over at midnight.
+15:53:50,259 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2552f2cb - Setting initial period to 2024-12-14T12:52:02.564Z
+15:53:50,259 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2552f2cb - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+15:53:50,259 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@2552f2cb - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+15:53:50,259 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[REQUEST-RESPONSE-FILE-APPENDER] - Active log file name: ./logs/request-response-logger.log
+15:53:50,259 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[REQUEST-RESPONSE-FILE-APPENDER] - File property is set to [./logs/request-response-logger.log]
+15:53:50,259 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+15:53:50,259 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:53:50,259 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+15:53:50,259 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.SQL] to DEBUG
+15:53:50,264 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.hibernate.SQL] to false
+15:53:50,264 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[org.hibernate.SQL]
+15:53:50,264 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.type.descriptor.sql] to TRACE
+15:53:50,264 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.hibernate.type.descriptor.sql] to false
+15:53:50,264 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[org.hibernate.type.descriptor.sql]
+15:53:50,264 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+15:53:50,264 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+15:53:50,264 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE_APPENDER] to Logger[ROOT]
+15:53:50,264 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [lv.javaguru.travel.insurance.rest.loggers.TravelCalculatePremiumRequestLogger] to INFO
+15:53:50,264 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [REQUEST-RESPONSE-FILE-APPENDER] to Logger[lv.javaguru.travel.insurance.rest.loggers.TravelCalculatePremiumRequestLogger]
+15:53:50,264 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [lv.javaguru.travel.insurance.rest.loggers.TravelCalculatePremiumResponseLogger] to INFO
+15:53:50,264 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [REQUEST-RESPONSE-FILE-APPENDER] to Logger[lv.javaguru.travel.insurance.rest.loggers.TravelCalculatePremiumResponseLogger]
+15:53:50,264 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@33352f32 - End of configuration.
+15:53:50,264 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5f3b9c57 - Registering current configuration as safe fallback point
+15:53:50,264 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5fcacc0 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 310 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
 
+2024-12-14 15:53:50 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [lv.javaguru.travel.insurance.core.TravelCalculatePremiumRequestV1ValidatorTest]: TravelCalculatePremiumRequestV1ValidatorTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>WARNING: A Java agent has been loaded dynamically (C:\Users\User\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.12\be4984cb6fd1ef1d11f218a648889dfda44b8a15\byte-buddy-agent-1.14.12.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
 </pre>
 </span>
 </div>
@@ -488,7 +491,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 24 мая 2024 г., 23:56:07</p>
+<a href="http://www.gradle.org">Gradle 8.10</a> at 14 дек. 2024 г., 15:53:58</p>
 </div>
 </div>
 </body>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="lv.javaguru.travel.insurance.core.validationTests.TravelRequestMedicalRiskLimitLevelIsCorrectValidationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-24T20:55:43" hostname="DESKTOP-QKNTNJC" time="0.004">
+<testsuite name="lv.javaguru.travel.insurance.core.validationTests.TravelRequestMedicalRiskLimitLevelIsCorrectValidationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-14T12:53:57" hostname="DESKTOP-MNGQN6P" time="0.001">
   <properties/>
-  <testcase name="MedicalRiskLimitLevelNotCorrectValidationTest()" classname="lv.javaguru.travel.insurance.core.validationTests.TravelRequestMedicalRiskLimitLevelIsCorrectValidationTest" time="0.004"/>
+  <testcase name="MedicalRiskLimitLevelNotCorrectValidationTest()" classname="lv.javaguru.travel.insurance.core.validationTests.TravelRequestMedicalRiskLimitLevelIsCorrectValidationTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

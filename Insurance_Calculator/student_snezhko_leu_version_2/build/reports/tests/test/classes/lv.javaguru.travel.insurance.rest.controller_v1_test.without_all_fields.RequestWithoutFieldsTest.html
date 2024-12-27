@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.126s</div>
+<div class="counter">0.029s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">execute19()</td>
-<td class="success">0.070s</td>
+<td class="success">0.016s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">execute20()</td>
-<td class="success">0.056s</td>
+<td class="success">0.013s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,16 +92,12 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2024-07-15 18:31:02,022 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [lv.javaguru.travel.insurance.rest.controller_v1_test.without_all_fields.RequestWithoutFieldsTest], using SpringBootContextLoader
-2024-07-15 18:31:02,023 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [lv.javaguru.travel.insurance.rest.controller_v1_test.without_all_fields.RequestWithoutFieldsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2024-07-15 18:31:02,024 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [lv.javaguru.travel.insurance.rest.controller_v1_test.without_all_fields.RequestWithoutFieldsTest]: RequestWithoutFieldsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-07-15 18:31:02,038 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration lv.javaguru.travel.insurance.InsuranceApplication for test class lv.javaguru.travel.insurance.rest.controller_v1_test.without_all_fields.RequestWithoutFieldsTest
-2024-07-15 18:31:02,041 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2024-07-15 18:31:02,043 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@24ed4582, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@18601f1e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4140d677, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2c890ee3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@62068fa5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7a86e414, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3db2665d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@59a8891e, org.springframework.test.context.event.EventPublishingTestExecutionListener@f054e29, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@426ead99, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6c40bb07, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@713d2fe8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@546c43e0, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@63d93e91, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@a28296e]
-Hibernate: select classifier0_.id as id1_2_, classifier0_.classifier_id as classifi4_2_, classifier0_.description as descript2_2_, classifier0_.ic as ic3_2_ from classifier_values classifier0_ left outer join classifiers classifier1_ on classifier0_.classifier_id=classifier1_.id where classifier1_.title=? and classifier0_.ic=?
-Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descript2_3_0_, classifier0_.title as title3_3_0_ from classifiers classifier0_ where classifier0_.id=?
-2024-07-15 18:31:02,085 [Test worker] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 10
-2024-07-15 18:31:02,146 [Test worker] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 1
+<pre>2024-12-14 16:47:56,828 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [lv.javaguru.travel.insurance.rest.controller_v1_test.without_all_fields.RequestWithoutFieldsTest]: RequestWithoutFieldsTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-14 16:47:56,845 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration lv.javaguru.travel.insurance.InsuranceApplication for test class lv.javaguru.travel.insurance.rest.controller_v1_test.without_all_fields.RequestWithoutFieldsTest
+Hibernate: select cv1_0.id,cv1_0.classifier_id,cv1_0.description,cv1_0.ic from classifier_values cv1_0 left join classifiers c1_0 on c1_0.id=cv1_0.classifier_id where c1_0.title=? and cv1_0.ic=?
+Hibernate: select c1_0.id,c1_0.description,c1_0.title from classifiers c1_0 where c1_0.id=?
+2024-12-14 16:47:56,854 [Test worker] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 3
+2024-12-14 16:47:56,867 [Test worker] INFO  l.j.t.i.r.c.TravelCalculatePremiumRequestExecutionTimeLogger - Request processing time (ms): 0
 </pre>
 </span>
 </div>
@@ -113,7 +109,7 @@ Hibernate: select classifier0_.id as id1_3_0_, classifier0_.description as descr
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 15 июл. 2024 г., 18:31:06</p>
+<a href="http://www.gradle.org">Gradle 8.10</a> at 14 дек. 2024 г., 16:47:57</p>
 </div>
 </div>
 </body>

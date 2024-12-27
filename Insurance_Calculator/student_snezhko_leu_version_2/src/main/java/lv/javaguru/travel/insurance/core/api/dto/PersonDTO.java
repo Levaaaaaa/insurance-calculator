@@ -12,6 +12,7 @@ import lv.javaguru.travel.insurance.core.TE_PERSON_MEDICAL_STATUS;
 import lv.javaguru.travel.insurance.core.api.dto.util.BigDecimalSerializer;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
@@ -23,7 +24,10 @@ import java.util.UUID;
 @NoArgsConstructor
 public class PersonDTO {
 
+    @Size(max = 200, message = "First name is very long")
     private String personFirstName;
+
+    @Size(max = 200, message = "Last name is very long")
     private String personLastName;
     private UUID personIc;
     private String medicalRiskLimitLevel;

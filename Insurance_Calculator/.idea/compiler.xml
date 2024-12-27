@@ -6,7 +6,7 @@
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$USER_HOME$/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.24/13a394eed5c4f9efb2a6d956e2086f1d81e857d9/lombok-1.18.24.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.30/f195ee86e6c896ea47a1d39defbe20eb59cd149d/lombok-1.18.30.jar" />
         </processorPath>
         <module name="Insurance_Calculator.student_snezhko_leu_version_2.main" />
         <module name="Insurance_Calculator.student_snezhko_leu.test" />
@@ -14,16 +14,9 @@
         <module name="Insurance_Calculator.student_snezhko_leu.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Insurance_Calculator.student_snezhko_leu" target="18" />
-      <module name="Insurance_Calculator.student_snezhko_leu.main" target="18" />
-      <module name="Insurance_Calculator.student_snezhko_leu.test" target="18" />
-      <module name="Insurance_Calculator.student_snezhko_leu_version_2" target="18" />
-      <module name="Insurance_Calculator.student_snezhko_leu_version_2.main" target="18" />
-      <module name="Insurance_Calculator.student_snezhko_leu_version_2.test" target="18" />
-      <module name="student_snezhko_leu_version_2" target="18" />
-      <module name="student_snezhko_leu_version_2.main" target="18" />
-      <module name="student_snezhko_leu_version_2.test" target="18" />
+    <bytecodeTargetLevel target="21">
+      <module name="student_snezhko_leu_version_2.main" target="21" />
+      <module name="student_snezhko_leu_version_2.test" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>

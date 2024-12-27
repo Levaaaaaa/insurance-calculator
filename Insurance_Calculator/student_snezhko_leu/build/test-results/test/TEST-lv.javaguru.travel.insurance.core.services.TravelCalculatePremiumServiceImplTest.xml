@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-05-24T20:55:40" hostname="DESKTOP-QKNTNJC" time="0.622">
+<testsuite name="lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-12-14T12:53:57" hostname="DESKTOP-MNGQN6P" time="0.059">
   <properties/>
-  <testcase name="hasErrorsTest()" classname="lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest" time="0.112"/>
-  <testcase name="correctReturnResponsesFirstNameTest()" classname="lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest" time="0.025"/>
-  <testcase name="correctReturnResponsesLastNameTest()" classname="lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest" time="0.041"/>
-  <testcase name="validationErrorsTest()" classname="lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest" time="0.078"/>
-  <testcase name="correctReturnResponsesDateFromTest()" classname="lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest" time="0.252"/>
-  <testcase name="correctReturnResponsesDateToTest()" classname="lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest" time="0.028"/>
-  <system-out><![CDATA[2024-05-24 23:55:22,977 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper Neither @ContextConfiguration nor @ContextHierarchy found for test class [lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest], using SpringBootContextLoader
-2024-05-24 23:55:22,981 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader Could not detect default resource locations for test class [lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2024-05-24 23:55:22,987 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils Could not detect default configuration classes for test class [lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest]: TravelCalculatePremiumServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-05-24 23:55:23,049 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper Found @SpringBootConfiguration lv.javaguru.travel.insurance.InsuranceApplication for test class lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest
-2024-05-24 23:55:23,065 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2024-05-24 23:55:23,068 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7841c990, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1e75bef1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@169d5567, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1e489957, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@68b3de47, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5b827796, org.springframework.test.context.transaction.TransactionalTestExecutionListener@27c827ec, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7d108063, org.springframework.test.context.event.EventPublishingTestExecutionListener@b272860, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4351d055, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@25c06894, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5c2ae7d7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6e7cb01a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@236206f8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5c04ec8]
+  <testcase name="hasErrorsTest()" classname="lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest" time="0.026"/>
+  <testcase name="correctReturnResponsesFirstNameTest()" classname="lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest" time="0.005"/>
+  <testcase name="correctReturnResponsesLastNameTest()" classname="lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest" time="0.004"/>
+  <testcase name="validationErrorsTest()" classname="lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest" time="0.004"/>
+  <testcase name="correctReturnResponsesDateFromTest()" classname="lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest" time="0.004"/>
+  <testcase name="correctReturnResponsesDateToTest()" classname="lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest" time="0.004"/>
+  <system-out><![CDATA[2024-12-14 15:53:55 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest]: TravelCalculatePremiumServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-14 15:53:55 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration lv.javaguru.travel.insurance.InsuranceApplication for test class lv.javaguru.travel.insurance.core.services.TravelCalculatePremiumServiceImplTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -20,20 +16,23 @@
  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
   '  |____| .__|_| |_|_| |_\__, | / / / /
  =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v2.7.5)
+ :: Spring Boot ::                (v3.2.0)
 
-2024-05-24 23:55:23,386 [Test worker] INFO  l.j.t.i.c.s.TravelCalculatePremiumServiceImplTest Starting TravelCalculatePremiumServiceImplTest using Java 18.0.2 on DESKTOP-QKNTNJC with PID 2356 (started by User in D:\Leva\BSU\Java_Internship_2023\bsu-java-internship-2023\student_snezhko_leu)
-2024-05-24 23:55:23,387 [Test worker] INFO  l.j.t.i.c.s.TravelCalculatePremiumServiceImplTest No active profile set, falling back to 1 default profile: "default"
-2024-05-24 23:55:26,251 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-24 23:55:26,393 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 139 ms. Found 5 JPA repository interfaces.
-2024-05-24 23:55:28,030 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
-2024-05-24 23:55:28,101 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
-2024-05-24 23:55:29,048 [Test worker] INFO  o.h.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-24 23:55:29,075 [Test worker] INFO  org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-05-24 23:55:29,658 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-05-24 23:55:29,658 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-05-24 23:55:33,190 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-05-24 23:55:39,673 [Test worker] INFO  l.j.t.i.c.s.TravelCalculatePremiumServiceImplTest Started TravelCalculatePremiumServiceImplTest in 16.463 seconds (JVM running for 56.099)
+2024-12-14 15:53:55 [Test worker] INFO  l.j.t.i.c.s.TravelCalculatePremiumServiceImplTest - Starting TravelCalculatePremiumServiceImplTest using Java 21.0.5 with PID 3756 (started by User in D:\Leva\Program\repos\My_Portfolio\Insurance_Calculator\student_snezhko_leu)
+2024-12-14 15:53:55 [Test worker] INFO  l.j.t.i.c.s.TravelCalculatePremiumServiceImplTest - No active profile set, falling back to 1 default profile: "default"
+2024-12-14 15:53:55 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-14 15:53:55 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 5 JPA repository interfaces.
+2024-12-14 15:53:56 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-14 15:53:56 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn30: url=jdbc:h2:mem:testdb user=SA
+2024-12-14 15:53:56 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-14 15:53:56 [Test worker] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-14 15:53:56 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-14 15:53:56 [Test worker] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-14 15:53:56 [Test worker] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-14 15:53:56 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-14 15:53:56 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14 15:53:56 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-14 15:53:56 [Test worker] INFO  l.j.t.i.c.s.TravelCalculatePremiumServiceImplTest - Started TravelCalculatePremiumServiceImplTest in 1.511 seconds (process running for 8.19)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

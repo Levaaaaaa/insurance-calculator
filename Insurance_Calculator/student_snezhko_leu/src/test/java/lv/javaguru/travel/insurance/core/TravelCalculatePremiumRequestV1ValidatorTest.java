@@ -4,9 +4,13 @@ import lv.javaguru.travel.insurance.dto.v1.TravelCalculatePremiumRequestV1;
 import lv.javaguru.travel.insurance.rest.TravelRequestValidation;
 import lv.javaguru.travel.insurance.rest.validation.*;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.util.ReflectionTestUtils;
 
+//import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -15,10 +19,13 @@ import java.util.*;
 
 import java.util.List;
 
+@ExtendWith(SpringExtension.class)
 public class TravelCalculatePremiumRequestV1ValidatorTest {
     @InjectMocks
     private TravelCalculatePremiumRequestValidator validator = new TravelCalculatePremiumRequestValidator();
-    private TravelCalculatePremiumRequestV1 request = mock(TravelCalculatePremiumRequestV1.class);
+
+    @Mock
+    private TravelCalculatePremiumRequestV1 request;
 
     @Test
     public void TravelCalculatePremiumRequestValidatorOneErrorTest() {
